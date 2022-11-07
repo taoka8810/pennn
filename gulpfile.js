@@ -31,15 +31,14 @@ const compileScss = () => {
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: "compressed" }))
     .pipe(sourcemaps.write())
-    .pipe(rename("style.min.css"))
+    .pipe(rename("style.css"))
     .pipe(dest("./penn_theme/css"));
 };
 
-// JSのバンドル
+// JSのコピー
 const bundleJS = () => {
   return src("./src/js/**/*.js")
     .pipe(plumber(notify.onError("Error: <%= error.message %>")))
-    .pipe(concat("index.js"))
     .pipe(uglify())
     .pipe(dest("./penn_theme/js"));
 };
@@ -49,14 +48,9 @@ const copyImage = () => {
   return src("./src/img/**").pipe(dest("./penn_theme/img"));
 };
 
-// ブラウザ初期設定
-const browserInitialize = (done) => {
-  browserSync.init({
-    proxy: "penn.local",
-    notify: false,
-    open: "local",
-  });
-  done();
+// ライブラリのコピー
+const copyLibrary = () => {
+  return src("./src/lib/**").pipe(dest("./penn_theme/lib"));
 };
 
 // ブラウザ自動リロード
@@ -71,6 +65,7 @@ const watchFile = () => {
   watch("./src/style.css", series(copyFile, browserReload));
   watch("./src/js/**/*.js", series(bundleJS, browserReload));
   watch("./src/img/**", series(copyImage, browserReload));
+  watch("./src/lib/**", series(copyLibrary, browserReload));
 };
 
 exports.default = series(
@@ -80,5 +75,6 @@ exports.default = series(
   copyFile,
   bundleJS,
   copyImage,
-  parallel(watchFile, browserInitialize)
+  copyLibrary,
+  watchFile
 );
