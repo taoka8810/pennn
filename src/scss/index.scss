@@ -1,0 +1,14 @@
+// foundation
+@use "./foundation/reset.scss";
+
+// layout
+@use "./layout/hoge.scss";
+
+// component
+@use "./object/component/foo.scss";
+
+// project
+@use "./object/project/bar.scss";
+
+// utility
+@use "./object/utility/per.scss";
