@@ -17,6 +17,6 @@
 <body>
   <header class="p-header">
     <div class="p-header__inner">
-      <h1 class="p-header__title">Penn</h1>
+      <logo class="p-header__title">Penn</logo>
     </div>
   </header>

@@ -1,0 +1,23 @@
+@use "../foundation/forward.scss" as *;
+
+.p-top__inner {
+  padding: 80px 100px;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.p-top__articles-heading {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #1d3557;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 0.5px;
+}
+
+.p-top__article-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 3%;
+  margin-top: 50px;
+}
