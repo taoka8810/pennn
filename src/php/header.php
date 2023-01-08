@@ -13,7 +13,4 @@
 </head>
 
 <body>
-  <header>ヘッダーだお</header>
-</body>
-
-</html>
+  <header>ヘッダー</header>
