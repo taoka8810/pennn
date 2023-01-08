@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <h1>これはヘッダーです</h1>
+  <header>ヘッダーだお</header>
 </body>
 
 </html>
