@@ -1,2 +1,6 @@
 // foundation
 @use "./foundation/reset.scss";
+@use "./foundation/base.scss";
+
+// project
+@use "./project/header.scss";

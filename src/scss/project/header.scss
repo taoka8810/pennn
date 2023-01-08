@@ -1,0 +1,18 @@
+.p-header {
+  background-color: #e63946;
+}
+
+.p-header__inner {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 30px;
+  height: 70px;
+  max-width: 1200px;
+}
+
+.p-header__title {
+  font-family: "Pacifico", sans-serif;
+  font-size: 35px;
+  color: #f1faee;
+}
