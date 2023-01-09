@@ -1,4 +1,4 @@
-<article class="c-article-card">
+<article class="c-article-card preload">
   <a href="">
     <p class="c-aricle-card__tag">WordPress</p>
     <div class="c-article-card__thumbnail">
