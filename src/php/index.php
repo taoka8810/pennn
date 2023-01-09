@@ -4,13 +4,17 @@
 
   <!-- article-web -->
   <section class="p-top__articles">
-    <h2 class="p-top__articles-heading">Web制作</h2>
+    <div class="p-top__articles-heading">
+      <h2 class="p-top__articles-heading-title">Web制作</h2>
+      <a href="" class="p-top__all-article-link">全ての記事を見る</a>
+    </div>
     <div class="p-top__article-container article-swiper">
       <div class="swiper-wrapper">
         <?php 
           $args = [
             'post_type' => 'web',
             "posts" => $post,
+            'posts_per_page' => 10,
           ];
           $the_query = new WP_Query($args);
           if ($the_query->have_posts()) :

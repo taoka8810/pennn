@@ -7,12 +7,24 @@
 }
 
 .p-top__articles-heading {
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 10px;
   border-bottom: 1px solid #1d3557;
+}
+
+.p-top__articles-heading-title {
   font-size: 20px;
   font-weight: bold;
-  color: #333;
   letter-spacing: 0.5px;
+  color: #333;
+}
+
+.p-top__all-article-link {
+  align-self: flex-end;
+  font-size: 12px;
+  text-decoration: none;
+  color: rgb(123, 123, 123);
 }
 
 .p-top__article-container {
