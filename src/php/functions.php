@@ -35,7 +35,7 @@ function create_post_type() {
       'hierarchical' => true,
       'update_count_callback' => '_update_post_term_count',
       'label' => '技術 カテゴリー',
-      'singular_label' => 'Web制作 カテゴリー',
+      'singular_label' => '技術 カテゴリー',
       'public' => true,
       'show_ui' => true,
       'show_in_rest' => true,
