@@ -4,12 +4,16 @@
   padding: 50px 100px;
   margin: 0 auto;
   max-width: 1100px;
+  @include sp {
+    max-width: 600px;
+    padding: 50px 30px;
+  }
 }
 
 .p-top__articles-heading {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 10px;
+  padding: 0 10px 10px;
   border-bottom: 1px solid #1d3557;
 }
 
@@ -30,6 +34,9 @@
 .p-top__article-container {
   position: relative;
   margin-top: 50px;
+  @include sp {
+    margin-top: 30px;
+  }
 }
 
 // Swiper
@@ -57,6 +64,11 @@
   &:active {
     background-color: #c78f01;
     transition: none;
+  }
+  @include sp {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
   }
 }
 
