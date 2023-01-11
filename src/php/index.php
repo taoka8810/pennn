@@ -28,6 +28,7 @@
             "url" => get_the_permalink(),
             "date" => get_the_modified_date("Y/m/d"),
             "tag" => $terms[0]->name,
+            "is_swiper" => "true",
           );
           echo get_template_part("./component/article-card", null, $args);
         ?>

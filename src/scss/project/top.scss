@@ -4,7 +4,7 @@
   padding: 50px 100px;
   margin: 0 auto;
   max-width: 1100px;
-  @include sp {
+  @include tb {
     max-width: 600px;
     padding: 50px 30px;
   }
@@ -34,7 +34,7 @@
 .p-top__article-container {
   position: relative;
   margin-top: 50px;
-  @include sp {
+  @include tb {
     margin-top: 30px;
   }
 }
@@ -65,7 +65,7 @@
     background-color: #c78f01;
     transition: none;
   }
-  @include sp {
+  @include tb {
     width: 50px;
     height: 50px;
     font-size: 25px;
