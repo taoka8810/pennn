@@ -1,27 +1,38 @@
 @use "../foundation/forward.scss" as *;
 
-.p-top__articles {
-  padding: 50px 100px;
+.p-top__heading {
+  margin-top: 130px;
+  text-align: center;
+  background-color: $COLOR_BLACK;
+}
+
+.p-top__heading-inner {
+  text-align: center;
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 900px;
+}
+
+.p-top__heading-title {
+  font-family: "Pacifico", sans-serif;
+  font-size: 60px;
+  color: #fff;
+}
+
+.p-top__articles {
+  padding: 0 50px;
+  margin: 0 auto;
+  max-width: 900px;
   @include tb {
     max-width: 600px;
     padding: 50px 30px;
   }
 }
 
-.p-top__articles-heading {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 10px 10px;
-  border-bottom: 1px solid #1d3557;
-}
-
-.p-top__articles-heading-title {
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-  color: #333;
+.p-top__articles-title {
+  font-family: "Pacifico", sans-serif;
+  font-size: 45px;
+  color: $COLOR_WHITE;
+  letter-spacing: 1px;
 }
 
 .p-top__all-article-link {
@@ -50,19 +61,18 @@
   border: none;
   border-radius: 50%;
   background-color: transparent;
-  color: #333;
+  color: $COLOR_WHITE;
   font-size: 30px;
   cursor: pointer;
   z-index: 100;
   transition: 0.3s;
   transform: scale(1);
   &:hover {
-    background-color: $COLOR_THEME_RED;
-    color: $COLOR_WHITE;
+    background-color: $COLOR_RED;
     transition: 0.3s;
   }
   &:active {
-    background-color: #c78f01;
+    background-color: $COLOR_DARK_RED;
     transition: none;
   }
   @include tb {
@@ -75,7 +85,7 @@
 .article-swiper-button-prev {
   @extend .swiper-button-style;
   top: calc(50% - 25px);
-  left: -20px;
+  left: -30px;
 }
 
 .article-swiper-button-next {

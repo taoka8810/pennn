@@ -1,6 +1,8 @@
+@use "../foundation/forward.scss" as *;
+
 body {
   font-family: "Noto Sans JP", sans-serif;
-  background-color: #f0f0f0;
+  background-color: $COLOR_BLACK;
   overflow-x: hidden;
 }
 

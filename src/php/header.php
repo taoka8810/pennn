@@ -22,8 +22,3 @@
 </head>
 
 <body>
-  <header class="p-header">
-    <div class="p-header__inner">
-      <logo class="p-header__title">Penn</logo>
-    </div>
-  </header>

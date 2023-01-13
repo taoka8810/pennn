@@ -1,4 +1,5 @@
 const swiper = new Swiper(".article-swiper", {
+  loop: true,
   spaceBetween: 10,
   slidesPerView: 2,
   navigation: {

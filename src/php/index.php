@@ -1,13 +1,11 @@
 <?php get_header(); ?>
 
 <main class="p-top">
-
+  <section class="p-top__heading">
+    <h1 class="p-top__heading-title">Penn</h1>
+  </section>
   <!-- article-web -->
   <section class="p-top__articles">
-    <div class="p-top__articles-heading">
-      <h2 class="p-top__articles-heading-title">Web制作</h2>
-      <a href="/web" class="p-top__all-article-link">全ての記事を見る</a>
-    </div>
     <div class="p-top__article-container article-swiper">
       <div class="swiper-wrapper">
         <?php 
