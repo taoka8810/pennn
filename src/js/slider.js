@@ -1,5 +1,6 @@
 const swiper = new Swiper(".article-swiper", {
   loop: true,
+  loopAdditionalSlides: 1,
   autoplay: {
     delay: 10000,
     speed: 10,

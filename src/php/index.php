@@ -4,8 +4,32 @@
   <section class="p-top__heading">
     <h1 class="p-top__heading-title">Penn</h1>
   </section>
-  <!-- article-web -->
+  <!-- contents tile -->
+  <section class="p-top__tiles">
+    <div class="p-top__tile-top">
+      <a class="p-top__tile-note" href="">
+        <span>Notes</span>
+      </a>
+      <a class="p-top__tile-portforio" href="">
+        <span>Portforio</span>
+      </a>
+    </div>
+    <div class="p-top__tile-bottom">
+      <a class="p-top__tile-about" href="">
+        <span>About</span>
+        <span>Me</span>
+      </a>
+      <a class="p-top__tile-twitter" href="https://twitter.com">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a class="p-top__tile-github" href="https://github.com">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+  </section>
+  <!-- feature article -->
   <section class="p-top__articles">
+    <h2 class="p-top__articles-title">New Posts</h2>
     <div class="p-top__article-container article-swiper">
       <div class="swiper-wrapper">
         <?php 

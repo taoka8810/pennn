@@ -14,13 +14,153 @@
 
 .p-top__heading-title {
   font-family: "Pacifico", sans-serif;
-  font-size: 60px;
+  font-size: 70px;
   color: #fff;
+}
+
+.p-top__tiles {
+  margin: 50px auto;
+  max-width: 900px;
+}
+.base-tile-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  text-decoration: none;
+}
+.p-top__tile-top,
+.p-top__tile-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.p-top__tile-about {
+  @extend .base-tile-style;
+  position: relative;
+  width: 360px;
+  height: 180px;
+  background: linear-gradient(180deg, #fefba3, #f2951a);
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    bottom: 0px;
+    right: 50px;
+    border-radius: 0 0 0 30px;
+    background-image: url(../img/tile-image-about.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.p-top__tile-note {
+  @extend .base-tile-style;
+  position: relative;
+  width: 375px;
+  height: 375px;
+  background: linear-gradient(180deg, #bfe9a7, #37725f);
+  &::before {
+    content: "";
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    right: 0px;
+    bottom: 0px;
+    background-image: url(../img/tile-image-note.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.p-top__tile-portforio {
+  @extend .base-tile-style;
+  position: relative;
+  width: 375px;
+  height: 375px;
+  background: linear-gradient(45deg, #fa4b5d, #8278ee);
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-image: url(../img/tile-image-portforio.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}
+
+.p-top__tile-about span {
+  position: relative;
+  color: #fff;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Shrikhand", cursive;
+  &:first-child {
+    font-size: 50px;
+    top: -25px;
+    left: 80px;
+  }
+  &:last-child {
+    bottom: -25px;
+    right: -35px;
+  }
+}
+
+.p-top__tile-note span {
+  position: relative;
+  bottom: 70px;
+  left: -70px;
+  font-size: 55px;
+  color: #fff;
+  font-weight: bold;
+  font-family: "Shrikhand", cursive;
+}
+
+.p-top__tile-portforio span {
+  position: relative;
+  bottom: 70px;
+  color: #fff;
+  font-size: 55px;
+  font-weight: bold;
+  font-family: "Shrikhand", cursive;
+}
+
+.p-top__tile-sns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 30px;
+  font-size: 55px;
+  text-decoration: none;
+}
+
+.p-top__tile-twitter {
+  @extend .p-top__tile-sns;
+  color: $COLOR_WHITE;
+  background: linear-gradient(-45deg, #2071bc, #93cafd);
+  // > i {
+  //   padding: 30px;
+  //   border-radius: 50px;
+  //   background: #6d9dd8;
+  //   box-shadow: inset -5px 5px 10px #5d85b8, inset 5px -5px 10px #7db5f8;
+  // }
+}
+
+.p-top__tile-github {
+  @extend .p-top__tile-sns;
+  color: #333;
+  background: linear-gradient(-45deg, #9f8ad6, #d1c6f0);
 }
 
 .p-top__articles {
   padding: 0 50px;
-  margin: 0 auto;
+  margin: 150px auto 0;
   max-width: 900px;
   @include tb {
     max-width: 600px;
@@ -29,10 +169,15 @@
 }
 
 .p-top__articles-title {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 20px;
   font-family: "Pacifico", sans-serif;
-  font-size: 45px;
-  color: $COLOR_WHITE;
+  font-size: 50px;
+  color: #fff;
   letter-spacing: 1px;
+  border-bottom: 5px white dotted;
+  max-width: 400px;
 }
 
 .p-top__all-article-link {
