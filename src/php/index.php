@@ -7,7 +7,7 @@
   <!-- contents tile -->
   <section class="p-top__tiles">
     <div class="p-top__tile-top">
-      <a class="p-top__tile-note" href="">
+      <a class="p-top__tile-note" href="/notes">
         <span>Notes</span>
       </a>
       <a class="p-top__tile-portforio" href="">

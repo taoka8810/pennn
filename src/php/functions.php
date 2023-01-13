@@ -12,7 +12,7 @@ function post_has_archive($args, $post_type)
 {
     if ('post' == $post_type) {
         $args['rewrite'] = true;
-        $args['has_archive'] = 'blog';
+        $args['has_archive'] = 'notes';
     }
     return $args;
 }
