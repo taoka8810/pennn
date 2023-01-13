@@ -172,7 +172,7 @@
   margin: 0 auto;
   text-align: center;
   padding-bottom: 20px;
-  font-family: "Pacifico", sans-serif;
+  font-family: "Shrikhand", cursive;
   font-size: 50px;
   color: #fff;
   letter-spacing: 1px;
@@ -195,6 +195,12 @@
   }
 }
 
+.p-top__article-slide-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 // Swiper
 .swiper-button-style {
   position: absolute;
@@ -206,18 +212,19 @@
   border: none;
   border-radius: 50%;
   background-color: transparent;
-  color: $COLOR_WHITE;
+  color: #fff;
   font-size: 30px;
   cursor: pointer;
   z-index: 100;
   transition: 0.3s;
   transform: scale(1);
   &:hover {
-    background-color: $COLOR_RED;
+    background-color: #fff;
+    color: #333;
     transition: 0.3s;
   }
   &:active {
-    background-color: $COLOR_DARK_RED;
+    background-color: rgb(188, 188, 188);
     transition: none;
   }
   @include tb {
