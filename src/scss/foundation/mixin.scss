@@ -1,6 +1,6 @@
-$tb: 840px;
-$pc: 841px;
-$sp: 450px;
+$tb: 800px;
+$pc: 801px;
+$sp: 501px;
 
 @mixin sp {
   @media screen and (max-width: ($sp)) {
@@ -8,7 +8,7 @@ $sp: 450px;
   }
 }
 @mixin tb {
-  @media screen and (max-width: ($tb)) {
+  @media screen and (min-width: ($sp)) and (max-width: ($tb)) {
     @content;
   }
 }

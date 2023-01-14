@@ -44,6 +44,9 @@
   &[data-category="other"] {
     background-color: #04b687;
   }
+  @include sp {
+    padding: 8px;
+  }
 }
 
 .c-article-card__icon {
