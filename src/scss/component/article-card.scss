@@ -32,10 +32,18 @@
   position: absolute;
   padding: 10px 14px;
   border-radius: 10px 0 0 0;
-  background-color: $COLOR_RED;
   font-size: 12px;
   font-weight: bold;
   color: $COLOR_WHITE;
+  &[data-category="dev"] {
+    background-color: #dd515f;
+  }
+  &[data-category="design"] {
+    background-color: #e7a350;
+  }
+  &[data-category="other"] {
+    background-color: #04b687;
+  }
 }
 
 .c-article-card__icon {

@@ -42,7 +42,8 @@
         <div class="p-top__article-slide-wrapper swiper-slide">
           <article class="c-article-card">
             <a href="<?php echo get_the_permalink(); ?>">
-              <p class="c-aricle-card__tag"><?php echo $category; ?></p>
+              <p class="c-aricle-card__tag" data-category="<?php echo get_category_color($category); ?>">
+                <?php echo $category; ?></p>
               <div class="c-article-card__icon">
                 <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="記事のサムネイル">
               </div>
@@ -54,7 +55,8 @@
           </article>
           <article class="c-article-card">
             <a href="<?php echo get_the_permalink(); ?>">
-              <p class="c-aricle-card__tag"><?php echo $category; ?></p>
+              <p class="c-aricle-card__tag" data-category="<?php echo get_category_color($category); ?>">
+                <?php echo $category; ?></p>
               <div class="c-article-card__icon">
                 <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="記事のサムネイル">
               </div>

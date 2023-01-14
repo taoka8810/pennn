@@ -15,3 +15,21 @@
     transform: scale(1.05);
   }
 }
+
+@keyframes categoryButtonClick {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

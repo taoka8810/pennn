@@ -1,0 +1,97 @@
+@use "../foundation/forward.scss" as *;
+
+.p-notes__inner {
+  margin: 160px auto 0;
+  max-width: 900px;
+}
+
+.p-notes__title {
+  font-size: 50px;
+  color: #fff;
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+}
+
+.p-notes__category-button-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.p-notes__category-button {
+  position: relative;
+  &:focus {
+    animation: categoryButtonClick 0.3s;
+  }
+}
+
+.p-notes__category-button[data-is-selected="false"] {
+  width: 70px;
+  height: 70px;
+  background-color: $COLOR_BLACK_LIGHT;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  &[data-category="all"] {
+    border: 2px solid #4193e0;
+  }
+  &[data-category="dev"] {
+    border: 2px solid #dd515f;
+  }
+  &[data-category="design"] {
+    border: 2px solid #e7a350;
+  }
+  &[data-category="other"] {
+    border: 2px solid #04b687;
+  }
+}
+
+.p-notes__category-button[data-is-selected="true"] {
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  &[data-category="all"] {
+    background-color: #4193e0;
+    border: 2px solid #4193e0;
+  }
+  &[data-category="dev"] {
+    background-color: #dd515f;
+    border: 2px solid #dd515f;
+  }
+  &[data-category="design"] {
+    background-color: #e7a350;
+    border: 2px solid #e7a350;
+  }
+  &[data-category="other"] {
+    background-color: #04b687;
+    border: 2px solid #04b687;
+  }
+}
+
+.p-notes__category-button i {
+  font-size: 20px;
+  color: white;
+}
+
+.p-notes__category-name {
+  text-align: center;
+  margin-top: 9px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  color: $COLOR_WHITE;
+}
+
+.p-notes__contents[data-is-show="true"] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 90px 0;
+}
+
+.p-notes__contents[data-is-show="false"] {
+  display: none;
+}

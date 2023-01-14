@@ -1,12 +1,12 @@
 @use "../foundation/forward.scss" as *;
 
-.p-web__heading {
+.p-note__heading {
   text-align: center;
   padding-top: 130px;
   background-color: $COLOR_BLACK;
 }
 
-.p-web__heading-icon {
+.p-note__heading-icon {
   margin-bottom: 30px;
   > img {
     width: 70px;
@@ -14,7 +14,7 @@
   }
 }
 
-.p-web__heading-title {
+.p-note__heading-title {
   font-size: 40px;
   color: #fff;
 }
