@@ -19,7 +19,7 @@
       width: calc((100% - 40px) / 3);
     }
     @include sp {
-      width: calc((100% - 10px) / 2);
+      width: calc((100% - 20px) / 2);
     }
   }
 }
@@ -44,8 +44,12 @@
   &[data-category="other"] {
     background-color: #04b687;
   }
+  @include tb {
+    font-size: 10px;
+    padding: 6px 8px;
+  }
   @include sp {
-    padding: 8px;
+    padding: 5px 8px;
   }
 }
 

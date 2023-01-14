@@ -2,7 +2,15 @@
 
 .p-notes__inner {
   margin: 160px auto 0;
+  padding: 0 50px;
   max-width: 900px;
+  @include tb {
+    max-width: 600px;
+  }
+  @include sp {
+    padding: 0 10px;
+    max-width: 400px;
+  }
 }
 
 .p-notes__title {
@@ -17,6 +25,9 @@
   justify-content: center;
   gap: 30px;
   margin-top: 50px;
+  @include sp {
+    gap: 20px;
+  }
 }
 
 .p-notes__category-button {
@@ -90,6 +101,12 @@
   flex-wrap: wrap;
   gap: 30px;
   margin: 90px 0;
+  @include tb {
+    gap: 20px;
+  }
+  @include sp {
+    gap: 20px;
+  }
 }
 
 .p-notes__contents[data-is-show="false"] {
