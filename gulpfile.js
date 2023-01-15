@@ -11,17 +11,17 @@ const uglify = require("gulp-uglify");
 
 // ファイル削除を検知
 const deleteFile = () => {
-  return del("./penn_theme/**");
+  return del("./pennn_theme/**");
 };
 
 // phpのコピー
 const copyPHP = () => {
-  return src("./src/php/**/*.php").pipe(dest("./penn_theme"));
+  return src("./src/php/**/*.php").pipe(dest("./pennn_theme"));
 };
 
 // style.css(テーマの設定ファイル)をコピー
 const copyFile = () => {
-  return src("./src/style.css").pipe(dest("./penn_theme"));
+  return src("./src/style.css").pipe(dest("./pennn_theme"));
 };
 
 // Scssのコンパイル
@@ -32,7 +32,7 @@ const compileScss = () => {
     .pipe(sass({ outputStyle: "compressed" }))
     .pipe(sourcemaps.write())
     .pipe(rename("style.css"))
-    .pipe(dest("./penn_theme/css"));
+    .pipe(dest("./pennn_theme/css"));
 };
 
 // JSのコピー
@@ -40,17 +40,17 @@ const bundleJS = () => {
   return src("./src/js/**/*.js")
     .pipe(plumber(notify.onError("Error: <%= error.message %>")))
     .pipe(uglify())
-    .pipe(dest("./penn_theme/js"));
+    .pipe(dest("./pennn_theme/js"));
 };
 
 // 画像のコピー
 const copyImage = () => {
-  return src("./src/img/**").pipe(dest("./penn_theme/img"));
+  return src("./src/img/**").pipe(dest("./pennn_theme/img"));
 };
 
 // ライブラリのコピー
 const copyLibrary = () => {
-  return src("./src/lib/**").pipe(dest("./penn_theme/lib"));
+  return src("./src/lib/**").pipe(dest("./pennn_theme/lib"));
 };
 
 // ブラウザ自動リロード
