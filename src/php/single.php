@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main>
+<main class="p-note">
   <section class="p-note__heading">
     <div class="p-note__heading-icon">
       <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
@@ -33,8 +33,8 @@
     <div class="p-note__heading-date">更新日: <?php echo $modified_date; ?></div>
     <?php endif; ?>
   </section>
-  <section class="p-note__contents">
-    コンテンツ
+  <section class="p-note__contents" id="content">
+    <?php echo get_the_content(); ?>
   </section>
 </main>
 <?php get_footer(); ?>
