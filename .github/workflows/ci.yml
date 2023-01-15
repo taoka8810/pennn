@@ -28,5 +28,5 @@ jobs:
           server: pennn.pupu.jp
           username: ${{ secrets.FTP_USER_name }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ../../wp-content/themes/penn_theme/
+          local-dir: ./wp-content/themes/penn_theme/
           server-dir: ./wp-content/themes/ # access control sub directory
