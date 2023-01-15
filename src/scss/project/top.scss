@@ -1,7 +1,7 @@
 @use "../foundation/forward.scss" as *;
 
 .p-top__heading {
-  margin-top: 130px;
+  margin-top: 30px;
   text-align: center;
   background-color: $COLOR_BLACK;
   @include sp {
@@ -265,6 +265,13 @@
   @extend .p-top__tile-sns;
   color: #333;
   background: linear-gradient(-45deg, #9f8ad6, #d1c6f0);
+}
+
+.tile-animation {
+  animation: tileOver 0.3s;
+  &:hover {
+    animation: tileHover 0.2s forwards;
+  }
 }
 
 .p-top__articles {

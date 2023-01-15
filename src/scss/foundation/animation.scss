@@ -16,6 +16,36 @@
   }
 }
 
+@keyframes tileHover {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes tileOver {
+  0% {
+    transform: scale(1.08);
+  }
+  25% {
+    transform: scale(0.92);
+  }
+  40% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  75% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @keyframes categoryButtonClick {
   0% {
     transform: scale(1);

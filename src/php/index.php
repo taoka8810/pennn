@@ -7,22 +7,22 @@
   <!-- contents tile -->
   <section class="p-top__tiles">
     <div class="p-top__tile-top">
-      <a class="p-top__tile-note" href="/notes">
+      <a class="p-top__tile-note tile-animation" href="/notes">
         <span>Notes</span>
       </a>
-      <a class="p-top__tile-portforio" href="">
+      <a class="p-top__tile-portforio tile-animation" href="/portforio">
         <span>Portforio</span>
       </a>
     </div>
     <div class="p-top__tile-bottom">
-      <a class="p-top__tile-about" href="/about">
+      <a class="p-top__tile-about tile-animation" href="/about">
         <span>About</span>
         <span>Me</span>
       </a>
-      <a class="p-top__tile-twitter" href="https://twitter.com">
+      <a class="p-top__tile-twitter tile-animation" href="https://twitter.com">
         <i class="fa-brands fa-twitter"></i>
       </a>
-      <a class="p-top__tile-github" href="https://github.com">
+      <a class="p-top__tile-github tile-animation" href="https://github.com">
         <i class="fa-brands fa-github"></i>
       </a>
     </div>

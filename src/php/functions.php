@@ -29,3 +29,20 @@ function get_category_color($category_name) {
       return "all";
   };
 }
+
+add_action('init', 'create_post_type');
+function create_post_type() {
+
+  register_post_type(
+    'portforio',
+    array(
+      'label' => 'ポートフォリオ',
+      'public' => true,
+      'has_archive' => true,
+      'hierarchical' => true,
+      'menu_position' => 5,
+      'supports' => [],
+      'show_in_rest' => true
+    )
+  );
+}
