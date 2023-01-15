@@ -15,7 +15,7 @@
       </a>
     </div>
     <div class="p-top__tile-bottom">
-      <a class="p-top__tile-about" href="">
+      <a class="p-top__tile-about" href="/about">
         <span>About</span>
         <span>Me</span>
       </a>
