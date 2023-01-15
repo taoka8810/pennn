@@ -1,3 +1,7 @@
 <?php get_header(); ?>
-記事ページ
+
+<main>
+  <h1>自己紹介</h1>
+</main>
+
 <?php get_footer(); ?>

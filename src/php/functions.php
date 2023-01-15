@@ -6,52 +6,43 @@ add_theme_support('post-thumbnails');
 // 管理画面へのバーを無効化する
 show_admin_bar(false);
 
-// メニュー非表示
-add_action('admin_menu', 'remove_menus');
-function remove_menus()
-{
-  remove_menu_page('edit.php'); // 投稿を非表示
+// 投稿のアーカイブページ
+add_filter('register_post_type_args', 'post_has_archive', 10, 2);
+function post_has_archive($args, $post_type) {
+  if ('post' == $post_type) {
+    $args['rewrite'] = true;
+    $args['has_archive'] = 'notes';
+  }
+  return $args;
 }
 
-// カスタム投稿タイプ
+// カテゴリーによってタグの色を出し分ける
+function get_category_color($category_name) {
+  switch($category_name) {
+    case "Web開発":
+      return "dev";
+    case "デザイン":
+      return "design";
+    case "その他":
+      return "other";
+    default:
+      return "all";
+  };
+}
+
 add_action('init', 'create_post_type');
 function create_post_type() {
+
   register_post_type(
-    'web',
+    'portforio',
     array(
-      'label' => 'Web制作',
+      'label' => 'ポートフォリオ',
       'public' => true,
       'has_archive' => true,
       'hierarchical' => true,
       'menu_position' => 5,
-      'supports' => ['title', 'editor', 'thumbnail'],
+      'supports' => [],
       'show_in_rest' => true
-    )
-  );
-  register_taxonomy(
-    'tech-category',
-    'web',
-    array(
-      'hierarchical' => true,
-      'update_count_callback' => '_update_post_term_count',
-      'label' => '技術 カテゴリー',
-      'singular_label' => '技術 カテゴリー',
-      'public' => true,
-      'show_ui' => true,
-      'show_in_rest' => true,
-    )
-  );
-  register_taxonomy(
-    'keyword',
-    'web',
-    array(
-      'hierarchical' => true,
-      'update_count_callback' => '_update_post_term_count',
-      'label' => 'キーワード',
-      'singular_label' => 'キーワード',
-      'public' => true,
-      'show_ui' => true,
-      'show_in_rest' => true,
     )
   );
 }

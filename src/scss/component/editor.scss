@@ -1,0 +1,95 @@
+@use "../foundation/forward.scss" as *;
+
+#content {
+  h2 {
+    position: relative;
+    margin: 10px 0;
+    color: $COLOR_WHITE;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 60px;
+    @include sp {
+      font-size: 20px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: -22px;
+      top: 5px;
+      bottom: 5px;
+      width: 12px;
+      background-color: $COLOR_WHITE;
+      @include sp {
+        top: 7px;
+        left: -18px;
+        bottom: 7px;
+      }
+    }
+  }
+  h3 {
+    color: $COLOR_WHITE;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 60px;
+    @include sp {
+      margin: 20px 0;
+      line-height: 35px;
+    }
+  }
+  p {
+    margin-bottom: 15px;
+    color: $COLOR_WHITE;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 35px;
+  }
+  a {
+    color: #866de7;
+  }
+  ul {
+    list-style: disc;
+    list-style-position: inside;
+  }
+  ol {
+    list-style: decimal;
+    list-style-position: inside;
+  }
+  li {
+    color: $COLOR_WHITE;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 35px;
+    @include sp {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+  img {
+    object-fit: cover;
+    border-radius: 30px;
+    height: auto;
+    @include sp {
+      border-radius: 15px;
+    }
+  }
+  .wp-block-image {
+    width: 100% !important;
+  }
+  code {
+    padding: 4px 7px;
+    background-color: black;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 200;
+    border-radius: 4px;
+  }
+  pre code {
+    margin: 15px 0;
+    padding: 25px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    background-color: $COLOR_BLACK_LIGHT;
+  }
+}

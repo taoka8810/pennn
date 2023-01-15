@@ -1,0 +1,95 @@
+@use "../foundation/forward.scss" as *;
+
+.p-note {
+  padding: 0 30px;
+  @include sp {
+    padding: 0 10px;
+  }
+}
+
+.p-note__heading {
+  margin: 0 auto;
+  max-width: 730px;
+  text-align: center;
+  padding: 130px 0 0px;
+  background-color: $COLOR_BLACK;
+  border-bottom: 5px dotted $COLOR_WHITE;
+  @include sp {
+    padding-top: 90px;
+  }
+}
+
+.p-note__heading-icon {
+  margin-bottom: 30px;
+  > img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.p-note__heading-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  @include sp {
+    font-size: 26px;
+    line-height: 40px;
+  }
+}
+
+.p-note__heading-tag-wrapper {
+  margin: 25px 0 40px;
+  color: $COLOR_WHITE;
+}
+
+.p-note__heading-category-tag {
+  font-size: 12px;
+  margin: 0 9px;
+  padding: 8px 13px;
+  border-radius: 16px;
+  line-height: 40px;
+  &[data-category="dev"] {
+    background-color: $COLOR_RED;
+  }
+  &[data-category="design"] {
+    background-color: $COLOR_YELLOW;
+  }
+  &[data-category="other"] {
+    background-color: $COLOR_GREEN;
+  }
+  @include sp {
+    margin: 0 4px;
+  }
+}
+.p-note__heading-keyword-tag {
+  margin: 0 3px;
+  font-size: 12px;
+  padding: 8px 13px;
+  border-radius: 16px;
+  background-color: $COLOR_WHITE;
+  color: $COLOR_BLACK;
+  line-height: 40px;
+  white-space: nowrap;
+  @include sp {
+    margin: 0 1.5px;
+  }
+}
+
+.p-note__heading-date {
+  margin: 7px 0;
+  padding-right: 10px;
+  text-align: right;
+  color: rgb(120, 120, 120);
+  font-size: 14px;
+}
+
+.p-note__contents {
+  padding: 0 30px;
+  margin: 70px auto;
+  max-width: 680px;
+  color: $COLOR_WHITE;
+  @include sp {
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+}

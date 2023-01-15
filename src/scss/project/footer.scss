@@ -1,0 +1,41 @@
+@use "../foundation/forward.scss" as *;
+.p-footer {
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px 0 20px;
+  max-width: 900px;
+}
+.p-footer__sns {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.p-footer__sns-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  > i {
+    font-size: 50px;
+  }
+}
+.p-footer__sns-twitter {
+  @extend .p-footer__sns-icon;
+  background-color: #1da1f2;
+  color: $COLOR_WHITE;
+}
+
+.p-footer__sns-github {
+  @extend .p-footer__sns-icon;
+  background-color: #f2f3fe;
+}
+
+.p-footer__attribution {
+  font-size: 12px;
+  color: $COLOR_WHITE;
+  > a {
+    color: #787878;
+  }
+}

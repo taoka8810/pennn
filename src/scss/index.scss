@@ -4,9 +4,14 @@
 @use "./foundation/animation.scss";
 
 // project
-@use "./project/header.scss";
+@use "./project/footer.scss";
 @use "./project/top.scss";
-@use "./project/web.scss";
+@use "./project/note.scss";
+@use "./project/notes.scss";
 
 // component
 @use "./component/article-card.scss";
+@use "./component/editor.scss";
+
+// display
+@use "./utility/display.scss";
