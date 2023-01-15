@@ -30,4 +30,4 @@ jobs:
           username: ${{ secrets.FTP_USER_NAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./pennn_theme/
-          server-dir: ./wp-content/themes/ # access control sub directory
+          server-dir: ./pennn.me/wp-content/themes/ # access control sub directory
