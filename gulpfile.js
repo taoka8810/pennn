@@ -78,3 +78,13 @@ exports.default = series(
   copyLibrary,
   watchFile
 );
+
+exports.build = series(
+  deleteFile,
+  compileScss,
+  copyPHP,
+  copyFile,
+  bundleJS,
+  copyImage,
+  copyLibrary
+);
