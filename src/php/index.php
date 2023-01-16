@@ -2,7 +2,7 @@
 
 <main class="p-top">
   <section class="p-top__heading">
-    <h1 class="p-top__heading-title">Pennnnnnn</h1>
+    <h1 class="p-top__heading-title">Pennn</h1>
   </section>
   <!-- contents tile -->
   <section class="p-top__tiles">
