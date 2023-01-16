@@ -281,6 +281,12 @@
   &:hover {
     animation: tileHover 0.2s forwards;
   }
+  @include sp {
+    animation: none;
+    &:focus {
+      animation: tileOver 0.3s;
+    }
+  }
 }
 
 .p-top__articles {
