@@ -14,8 +14,12 @@
         <span>Portforio</span>
       </a>
     </div>
+    <a class="p-top__tile-about u-only-sp tile-animation" href="/about">
+      <span>About</span>
+      <span>Me</span>
+    </a>
     <div class="p-top__tile-bottom">
-      <a class="p-top__tile-about tile-animation" href="/about">
+      <a class="p-top__tile-about u-only-pc tile-animation" href="/about">
         <span>About</span>
         <span>Me</span>
       </a>

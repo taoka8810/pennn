@@ -40,9 +40,6 @@
   align-items: center;
   border-radius: 30px;
   text-decoration: none;
-  @include sp {
-    border-radius: 15px;
-  }
 }
 .p-top__tile-top,
 .p-top__tile-bottom {
@@ -55,10 +52,118 @@
     margin-bottom: 20px;
   }
   @include sp {
-    gap: 12px;
-    margin-bottom: 12px;
+    gap: 30px;
+    margin-bottom: 30px;
   }
 }
+.p-top__tile-top {
+  @include sp {
+    flex-direction: column;
+  }
+}
+
+.p-top__tile-note {
+  @extend .base-tile-style;
+  position: relative;
+  width: 375px;
+  height: 375px;
+  background: linear-gradient(180deg, #bfe9a7, #37725f);
+  @include tb {
+    width: 240px;
+    height: 240px;
+  }
+  @include sp {
+    margin: 0 auto;
+    width: 330px;
+    height: 330px;
+  }
+}
+.p-top__tile-note::before {
+  content: "";
+  position: absolute;
+  top: 120px;
+  left: 120px;
+  right: 0px;
+  bottom: 0px;
+  background-image: url(../img/tile-image-note.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  @include tb {
+    top: 70px;
+    left: 70px;
+  }
+  @include sp {
+    top: 90px;
+    left: 90px;
+  }
+}
+
+.p-top__tile-note span {
+  position: relative;
+  bottom: 70px;
+  left: -70px;
+  font-size: 55px;
+  color: #fff;
+  font-weight: bold;
+  font-family: "Shrikhand", cursive;
+  @include tb {
+    font-size: 35px;
+    bottom: 60px;
+    left: -40px;
+  }
+  @include sp {
+    font-size: 50px;
+    bottom: 80px;
+    left: -40px;
+  }
+}
+.p-top__tile-portforio {
+  @extend .base-tile-style;
+  position: relative;
+  width: 375px;
+  height: 375px;
+  background: linear-gradient(45deg, #fa4b5d, #8278ee);
+  @include tb {
+    width: 240px;
+    height: 240px;
+  }
+  @include sp {
+    margin: 0 auto;
+    width: 330px;
+    height: 330px;
+  }
+}
+
+.p-top__tile-portforio::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: url(../img/tile-image-portforio.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.p-top__tile-portforio span {
+  position: relative;
+  bottom: 70px;
+  color: #fff;
+  font-size: 55px;
+  font-weight: bold;
+  font-family: "Shrikhand", cursive;
+  @include tb {
+    bottom: 50px;
+    font-size: 35px;
+  }
+  @include sp {
+    bottom: 60px;
+    font-size: 50px;
+  }
+}
+
 .p-top__tile-about {
   @extend .base-tile-style;
   position: relative;
@@ -70,8 +175,9 @@
     height: 115px;
   }
   @include sp {
-    width: 163px;
-    height: 81.5px;
+    margin: 0 auto 30px;
+    width: 330px;
+    height: 165px;
   }
 }
 .p-top__tile-about::before {
@@ -90,74 +196,11 @@
     right: 40px;
   }
   @include sp {
-    top: 25px;
-    right: 25px;
+    top: 40px;
+    right: 40px;
     border-radius: 0 0 0 15px;
   }
 }
-.p-top__tile-note {
-  @extend .base-tile-style;
-  position: relative;
-  width: 375px;
-  height: 375px;
-  background: linear-gradient(180deg, #bfe9a7, #37725f);
-  @include tb {
-    width: 240px;
-    height: 240px;
-  }
-  @include sp {
-    width: 169px;
-    height: 169px;
-  }
-}
-.p-top__tile-note::before {
-  content: "";
-  position: absolute;
-  top: 120px;
-  left: 120px;
-  right: 0px;
-  bottom: 0px;
-  background-image: url(../img/tile-image-note.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  @include tb {
-    top: 70px;
-    left: 70px;
-  }
-  @include sp {
-    top: 50px;
-    left: 50px;
-  }
-}
-.p-top__tile-portforio {
-  @extend .base-tile-style;
-  position: relative;
-  width: 375px;
-  height: 375px;
-  background: linear-gradient(45deg, #fa4b5d, #8278ee);
-  @include tb {
-    width: 240px;
-    height: 240px;
-  }
-  @include sp {
-    width: 169px;
-    height: 169px;
-  }
-}
-
-.p-top__tile-portforio::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  background-image: url(../img/tile-image-portforio.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-
 .p-top__tile-about span {
   position: relative;
   color: #fff;
@@ -175,8 +218,8 @@
     }
     @include sp {
       top: -10px;
-      left: 45px;
-      font-size: 25px;
+      left: 80px;
+      font-size: 40px;
     }
   }
   &:last-child {
@@ -186,53 +229,15 @@
       left: -10px;
     }
     @include sp {
-      bottom: -15px;
-      left: -5px;
-      font-size: 25px;
+      bottom: -30px;
+      left: 0px;
+      font-size: 40px;
     }
   }
   @include tb {
     font-size: 33px;
   }
 }
-
-.p-top__tile-note span {
-  position: relative;
-  bottom: 70px;
-  left: -70px;
-  font-size: 55px;
-  color: #fff;
-  font-weight: bold;
-  font-family: "Shrikhand", cursive;
-  @include tb {
-    font-size: 35px;
-    bottom: 60px;
-    left: -40px;
-  }
-  @include sp {
-    font-size: 30px;
-    bottom: 40px;
-    left: -20px;
-  }
-}
-
-.p-top__tile-portforio span {
-  position: relative;
-  bottom: 70px;
-  color: #fff;
-  font-size: 55px;
-  font-weight: bold;
-  font-family: "Shrikhand", cursive;
-  @include tb {
-    bottom: 50px;
-    font-size: 35px;
-  }
-  @include sp {
-    bottom: 30px;
-    font-size: 25px;
-  }
-}
-
 .p-top__tile-sns {
   display: flex;
   justify-content: center;
@@ -248,10 +253,10 @@
     font-size: 35px;
   }
   @include sp {
-    height: 81.5px;
-    width: 81.5px;
-    font-size: 25px;
-    border-radius: 15px;
+    height: 150px;
+    width: 150px;
+    font-size: 40px;
+    border-radius: 30px;
   }
 }
 

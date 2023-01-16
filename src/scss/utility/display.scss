@@ -1,9 +1,6 @@
 @use "../foundation/forward.scss" as *;
 
 .u-only-pc {
-  @include tb {
-    display: none;
-  }
   @include sp {
     display: none;
   }
