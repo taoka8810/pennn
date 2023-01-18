@@ -16,6 +16,16 @@ function post_has_archive($args, $post_type) {
   return $args;
 }
 
+// 固定ページのエディタを非表示
+function post_output_css() {
+  $pt = get_post_type();
+  if ($pt == 'page') { 
+      $hide_postdiv_css = '<style type="text/css">#postdiv, #postdivrich { display: none; }</style>';
+      echo $hide_postdiv_css;
+  }
+}
+add_action('admin_head', 'post_output_css');
+
 // カテゴリーによってタグの色を出し分ける
 function get_category_color($category_name) {
   switch($category_name) {
