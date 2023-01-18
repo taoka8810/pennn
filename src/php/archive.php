@@ -38,11 +38,14 @@
         setup_postdata($post);
         $category_array = get_the_category($posts -> ID);
         $category = $category_array[0] -> name;
+        $delay+=100;
       ?>
-      <article class="c-article-card" data-type="archive">
+      <article class="c-article-card" data-type="archive" data-delay="<?php echo $delay; ?>">
         <a href="<?php echo get_the_permalink(); ?>">
           <p class="c-aricle-card__tag" data-category="<?php echo get_category_color($category); ?>">
-            <?php echo $category; ?></p>
+            <?php echo $category; ?>
+            <?php echo $delay; ?>
+          </p>
           <div class="c-article-card__icon">
             <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="記事のサムネイル">
           </div>
