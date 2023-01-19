@@ -38,9 +38,8 @@
         setup_postdata($post);
         $category_array = get_the_category($posts -> ID);
         $category = $category_array[0] -> name;
-        $delay+=100;
       ?>
-      <article class="c-article-card" data-type="archive" data-delay="<?php echo $delay; ?>">
+      <article class="c-article-card" data-type="archive">
         <a href="<?php echo get_the_permalink(); ?>">
           <p class="c-aricle-card__tag" data-category="<?php echo get_category_color($category); ?>">
             <?php echo $category; ?>
