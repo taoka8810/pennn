@@ -94,14 +94,15 @@
     font-size: 14px;
     font-weight: 200;
     border-radius: 4px;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
   }
   pre code {
     margin: 15px 0;
     padding: 25px;
     border-radius: 15px;
     font-size: 14px;
-    font-weight: 500;
     line-height: 25px;
     background-color: $COLOR_BLACK_LIGHT;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
   }
 }
