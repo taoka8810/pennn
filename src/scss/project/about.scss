@@ -9,7 +9,7 @@
   }
   @include sp {
     margin-top: 50px;
-    padding: 0 10px;
+    padding: 0 20px;
     max-width: 400px;
   }
 }
@@ -28,6 +28,10 @@
 .p-about__me {
   display: flex;
   margin-top: 50px;
+  @include sp {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .p-about__icon {
@@ -38,6 +42,9 @@
     width: 70%;
     border-radius: 50%;
   }
+  @include sp {
+    width: 70%;
+  }
 }
 
 .p-about__intro {
@@ -46,6 +53,9 @@
     color: $COLOR_WHITE;
     line-height: 35px;
     letter-spacing: 0.5px;
+  }
+  @include sp {
+    width: 100%;
   }
 }
 
@@ -83,5 +93,8 @@
     width: 100%;
     height: 100%;
     border-radius: 10px;
+  }
+  @include sp {
+    width: calc((100% - 15px) / 2);
   }
 }
