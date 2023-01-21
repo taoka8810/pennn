@@ -31,7 +31,7 @@ const compileScss = () => {
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: "compressed" }))
     .pipe(sourcemaps.write())
-    .pipe(rename("style.css"))
+    .pipe(rename("style.min.css"))
     .pipe(dest("./pennn_theme/css"));
 };
 
