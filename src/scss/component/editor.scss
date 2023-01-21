@@ -3,7 +3,8 @@
 #content {
   h2 {
     position: relative;
-    margin: 10px 0;
+    margin: 50px 0 15px;
+    padding-left: 20px;
     color: $COLOR_WHITE;
     font-size: 24px;
     font-weight: bold;
@@ -14,21 +15,22 @@
     &::before {
       content: "";
       position: absolute;
-      left: -22px;
-      top: 5px;
-      bottom: 5px;
-      width: 12px;
+      left: 0px;
+      top: 11px;
+      bottom: 11px;
+      width: 10px;
       background-color: $COLOR_WHITE;
       @include sp {
-        top: 7px;
-        left: -18px;
-        bottom: 7px;
+        top: 11px;
+        bottom: 11px;
+        width: 7px;
       }
     }
   }
   h3 {
+    margin: 15px 0;
+    font-size: 22px;
     color: $COLOR_WHITE;
-    font-size: 20px;
     font-weight: bold;
     line-height: 60px;
     @include sp {
@@ -37,7 +39,7 @@
     }
   }
   p {
-    margin-bottom: 15px;
+    margin: 15px 0;
     color: $COLOR_WHITE;
     font-size: 16px;
     letter-spacing: 0.5px;
@@ -47,12 +49,20 @@
     color: #866de7;
   }
   ul {
+    padding-left: 30px;
     list-style: disc;
-    list-style-position: inside;
+    list-style-position: outside;
+    @include sp {
+      padding-left: 20px;
+    }
   }
   ol {
+    padding-left: 30px;
     list-style: decimal;
-    list-style-position: inside;
+    list-style-position: outside;
+    @include sp {
+      padding-left: 20px;
+    }
   }
   li {
     color: $COLOR_WHITE;
@@ -65,6 +75,7 @@
     }
   }
   img {
+    margin: 15px 0;
     object-fit: cover;
     border-radius: 30px;
     height: auto;
@@ -76,6 +87,7 @@
     width: 100% !important;
   }
   code {
+    margin: 15px 0;
     padding: 4px 7px;
     background-color: black;
     color: #fff;

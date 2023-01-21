@@ -48,7 +48,7 @@
           <div class="c-article-card__icon">
             <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="記事のサムネイル">
           </div>
-          <div class="c-article-card__info">
+          <div class="c-article-card__info"> 
             <h3 class="c-article-card__title"><?php echo get_the_title(); ?></h3>
             <p class="c-article-card__published-date"><?php echo get_the_modified_date("Y/m/d"); ?></p>
           </div>
