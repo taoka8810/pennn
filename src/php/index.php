@@ -23,10 +23,10 @@
         <span>About</span>
         <span>Me</span>
       </a>
-      <a class="p-top__tile-twitter tile-animation" href="https://twitter.com">
+      <a class="p-top__tile-twitter tile-animation" href="https://twitter.com/yasai_tarinai">
         <i class="fa-brands fa-twitter"></i>
       </a>
-      <a class="p-top__tile-github tile-animation" href="https://github.com">
+      <a class="p-top__tile-github tile-animation" href="https://github.com/taoka8810">
         <i class="fa-brands fa-github"></i>
       </a>
     </div>
