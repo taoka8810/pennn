@@ -287,7 +287,10 @@
   @include sp {
     animation: none;
     &:focus {
-      animation: tileOver 0.3s;
+      animation: categoryButtonClick 0.3s;
+    }
+    &:hover {
+      animation: none;
     }
   }
 }

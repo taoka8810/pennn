@@ -7,26 +7,26 @@
   <!-- contents tile -->
   <section class="p-top__tiles">
     <div class="p-top__tile-top">
-      <a class="p-top__tile-note tile-animation" href="/notes">
+      <a class="p-top__tile-note tile-animation" href="/notes" ontouchstart="">
         <span>Notes</span>
       </a>
-      <a class="p-top__tile-portforio tile-animation" href="/portforio">
+      <a class="p-top__tile-portforio tile-animation" href="/portforio" ontouchstart="">
         <span>Portforio</span>
       </a>
     </div>
-    <a class="p-top__tile-about u-only-sp tile-animation" href="/about">
+    <a class="p-top__tile-about u-only-sp tile-animation" href="/about" ontouchstart="">
       <span>About</span>
       <span>Me</span>
     </a>
     <div class="p-top__tile-bottom">
-      <a class="p-top__tile-about u-only-pc tile-animation" href="/about">
+      <a class="p-top__tile-about u-only-pc tile-animation" href="/about" ontouchstart="">
         <span>About</span>
         <span>Me</span>
       </a>
-      <a class="p-top__tile-twitter tile-animation" href="https://twitter.com/yasai_tarinai">
+      <a class="p-top__tile-twitter tile-animation" href="https://twitter.com/yasai_tarinai" ontouchstart="">
         <i class="fa-brands fa-twitter"></i>
       </a>
-      <a class="p-top__tile-github tile-animation" href="https://github.com/taoka8810">
+      <a class="p-top__tile-github tile-animation" href="https://github.com/taoka8810" ontouchstart="">
         <i class="fa-brands fa-github"></i>
       </a>
     </div>
