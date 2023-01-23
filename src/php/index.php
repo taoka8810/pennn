@@ -26,7 +26,7 @@
       <a class="p-top__tile-twitter tile-animation" href="https://twitter.com/yasai_tarinai" ontouchstart="">
         <i class="fa-brands fa-twitter"></i>
       </a>
-      <a class="p-top__tile-github tile-animation" href="https://github.com/taoka8810" ontouchstart="">
+      <a class="p-top__tile-github tile-animation" href="" ontouchstart="">
         <i class="fa-brands fa-github"></i>
       </a>
     </div>
