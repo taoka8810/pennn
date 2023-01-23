@@ -12,6 +12,9 @@
     animation-name: cardOver;
     animation-duration: 0.3s;
     animation-fill-mode: forwards;
+    @include sp {
+      animation: tileCard 0.3s;
+    }
   }
   &[data-type="archive"] {
     width: calc((100% - 90px) / 4);
