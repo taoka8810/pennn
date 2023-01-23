@@ -36,6 +36,14 @@
   &:focus {
     animation: categoryButtonClick 0.3s;
   }
+  @include sp {
+    &:focus {
+      animation: none;
+    }
+    &:hover {
+      animation: categoryButtonClick 0.3s;
+    }
+  }
 }
 
 .p-notes__category-button[data-is-selected="false"] {
