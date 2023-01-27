@@ -2,36 +2,39 @@
 <main class="p-notes">
   <div class="p-notes__inner">
     <h1 class="p-notes__title">Notes</h1>
-    <div class="p-notes__category-button-list">
+    <form class="p-notes__category-button-list" id="button-group">
       <div class="p-notes__category-button-wrapper">
-        <button class="p-notes__category-button" data-category="all" data-is-selected="true" tabindex="-1"
-          ontouchstart="">
+        <input class="p-notes__radio-button" type="radio" id="category-all" name="button-group" checked>
+        <label class="p-notes__category-button" for="category-all" data-category="all" tabindex="-1" ontouchstart="">
           <i class="fa-solid fa-earth-asia"></i>
-        </button>
+        </label>
         <div class="p-notes__category-name">ALL</div>
       </div>
       <div class="p-notes__category-button-wrapper">
-        <button class="p-notes__category-button" data-category="dev" data-is-selected="false" tabindex="-1"
+        <input class="p-notes__radio-button" type="radio" id="category-develop" name="button-group">
+        <label class="p-notes__category-button" for="category-develop" data-category="dev" tabindex="-1"
           ontouchstart="">
           <i class="fa-solid fa-code"></i>
-        </button>
+        </label>
         <div class="p-notes__category-name">Web開発</div>
       </div>
       <div class="p-notes__category-button-wrapper">
-        <button class="p-notes__category-button" data-category="design" data-is-selected="false" tabindex="-1"
+        <input class="p-notes__radio-button" type="radio" id="category-design" name="button-group">
+        <label class="p-notes__category-button" for="category-design" data-category="design" tabindex="-1"
           ontouchstart="">
           <i class="fa-solid fa-pen"></i>
-        </button>
+        </label>
         <div class="p-notes__category-name">デザイン</div>
       </div>
       <div class="p-notes__category-button-wrapper">
-        <button class="p-notes__category-button" data-category="other" data-is-selected="false" tabindex="-1"
+        <input class="p-notes__radio-button" type="radio" id="category-other" name="button-group">
+        <label class="p-notes__category-button" for="category-other" data-category="other" tabindex="-1"
           ontouchstart="">
           <i class="fa-solid fa-user-astronaut"></i>
-        </button>
+        </label>
         <div class="p-notes__category-name">その他</div>
       </div>
-    </div>
+    </form>
     <div class="p-notes__contents" id="contents-all" data-is-show="true">
       <?php 
       $args = array(
