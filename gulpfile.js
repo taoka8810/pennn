@@ -48,6 +48,10 @@ const copyImage = () => {
   return src("./src/img/**").pipe(dest("./pennn_theme/img"));
 };
 
+const copyRocket = () => {
+  return src("./src/rocket/**/*").pipe(dest("./pennn_theme/rocket"));
+};
+
 // ライブラリのコピー
 const copyLibrary = () => {
   return src("./src/lib/**").pipe(dest("./pennn_theme/lib"));
@@ -65,6 +69,7 @@ const watchFile = () => {
   watch("./src/style.css", series(copyFile, browserReload));
   watch("./src/js/**/*.js", series(bundleJS, browserReload));
   watch("./src/img/**", series(copyImage, browserReload));
+  watch("./src/rocket/**", series(copyRocket, browserReload));
   watch("./src/lib/**", series(copyLibrary, browserReload));
 };
 
@@ -76,6 +81,7 @@ exports.default = series(
   bundleJS,
   copyImage,
   copyLibrary,
+  copyRocket,
   watchFile
 );
 
@@ -86,5 +92,6 @@ exports.build = series(
   copyFile,
   bundleJS,
   copyImage,
+  copyRocket,
   copyLibrary
 );

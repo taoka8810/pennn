@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+<canvas id="myCanvas"></canvas>
 <main class="p-top">
   <section class="p-top__heading">
     <h1 class="p-top__heading-title">Pennn</h1>
@@ -31,5 +32,6 @@
       </a>
     </div>
   </section>
+
 </main>
 <?php get_footer(); ?>
