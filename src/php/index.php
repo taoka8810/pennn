@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 <main class="p-top">
+  <button class="p-top__rocket-button" id="rocket-button" data-is-visible="true">
+    <i class="fa-solid fa-rocket"></i>
+  </button>
   <section class="p-top__heading">
     <h1 class="p-top__heading-title">Pennn</h1>
   </section>

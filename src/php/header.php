@@ -34,6 +34,5 @@
   <?php wp_head(); ?>
 </head>
 
-<canvas id="myCanvas"></canvas>
-
 <body ontouchstart="">
+  <canvas id="myCanvas"></canvas>

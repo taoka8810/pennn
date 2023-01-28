@@ -1,6 +1,7 @@
 @use "../foundation/forward.scss" as *;
 
 body {
+  position: relative;
   font-family: Inter, Helvetica Neue, Arial, Hiragino Kaku Gothic ProN,
     Hiragino Sans, Meiryo, sans-serif;
   background-color: $COLOR_BLACK;
@@ -17,5 +18,5 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: -1;
+  z-index: -10;
 }

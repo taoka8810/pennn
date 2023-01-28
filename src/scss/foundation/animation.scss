@@ -84,3 +84,13 @@
     transform: scale(1);
   }
 }
+
+@keyframes rocketButtonClick {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
