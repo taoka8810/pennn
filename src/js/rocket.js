@@ -1,5 +1,5 @@
 $(function () {
   $("#rocket-button").click(function () {
-    $(this).attr("data-is-visible", "false");
+    $(this).attr("data-clicked", "true");
   });
 });

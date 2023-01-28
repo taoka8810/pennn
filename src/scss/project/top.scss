@@ -24,7 +24,7 @@
   }
 }
 
-.p-top__rocket-button[data-is-visible="false"] {
+.p-top__rocket-button[data-clicked="true"] {
   color: $COLOR_BLACK;
   background-color: white;
   animation: rocketButtonClick 0.3s forwards;

@@ -4,7 +4,8 @@
   "description": "いつか書く",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack --mode=development & yarn gulp",
+    "build": "yarn gulp build & webpack --mode=production"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,9 @@
   },
   "homepage": "https://github.com/taoka8810/Penn#readme",
   "dependencies": {
+    "@babel/core": "^7.17.4",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
     "browser-sync": "^2.27.10",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
@@ -34,6 +38,10 @@
     "raw-loader": "^4.0.2",
     "file-loader": "^6.2.0",
     "shader-loader": "^1.3.1",
-    "three": "^0.148.0"
+    "three": "^0.148.0",
+    "webpack": "^5.69.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-glsl-loader": "^1.0.1"
   }
 }
