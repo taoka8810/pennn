@@ -6,7 +6,6 @@ const notify = require("gulp-notify");
 const sourcemaps = require("gulp-sourcemaps");
 const rename = require("gulp-rename");
 const browserSync = require("browser-sync");
-const concat = require("gulp-concat");
 const uglify = require("gulp-uglify");
 
 // ファイル削除を検知
@@ -48,8 +47,11 @@ const copyImage = () => {
   return src("./src/img/**").pipe(dest("./pennn_theme/img"));
 };
 
+// ロケットのモデルをコピー
 const copyRocket = () => {
-  return src("./src/rocket/**/*").pipe(dest("./pennn_theme/rocket"));
+  return src(["./src/rocket/**/*", "!src/rocket/model.js"]).pipe(
+    dest("./pennn_theme/rocket")
+  );
 };
 
 // ライブラリのコピー

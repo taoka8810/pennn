@@ -4,10 +4,43 @@
   overflow: hidden;
 }
 
+.p-top__rocket-button {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+  z-index: 1000;
+  &:hover {
+    color: $COLOR_BLACK;
+    background-color: white;
+    transition: 0.2s;
+  }
+}
+
+.p-top__rocket-button[data-clicked="true"] {
+  color: $COLOR_BLACK;
+  background-color: white;
+  animation: rocketButtonClick 0.3s forwards;
+  cursor: default;
+}
+
+.p-top__rocket-button i {
+  position: relative;
+  top: 0.5px;
+  left: -0.7px;
+  font-size: 18px;
+}
+
 .p-top__heading {
   margin-top: 30px;
   text-align: center;
-  background-color: $COLOR_BLACK;
   @include sp {
     margin-top: 50px;
   }

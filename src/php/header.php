@@ -35,3 +35,4 @@
 </head>
 
 <body ontouchstart="">
+  <canvas id="myCanvas"></canvas>

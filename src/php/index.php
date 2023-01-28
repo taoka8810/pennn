@@ -1,7 +1,8 @@
 <?php get_header(); ?>
-
-<canvas id="myCanvas"></canvas>
 <main class="p-top">
+  <button class="p-top__rocket-button" id="rocket-button" data-clicked="false">
+    <i class="fa-solid fa-rocket"></i>
+  </button>
   <section class="p-top__heading">
     <h1 class="p-top__heading-title">Pennn</h1>
   </section>
