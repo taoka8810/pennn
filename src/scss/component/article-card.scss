@@ -40,10 +40,10 @@
   font-size: 12px;
   font-weight: bold;
   color: $COLOR_WHITE;
-  &[data-category="dev"] {
+  &[data-category="web"] {
     background-color: #dd515f;
   }
-  &[data-category="design"] {
+  &[data-category="hobby"] {
     background-color: #e7a350;
   }
   &[data-category="other"] {

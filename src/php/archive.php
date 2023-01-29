@@ -15,7 +15,7 @@
         <label class="p-notes__category-button" for="category-web" data-category="web" tabindex="-1" ontouchstart="">
           <i class="fa-solid fa-code"></i>
         </label>
-        <div class="p-notes__category-name">Web開発</div>
+        <div class="p-notes__category-name">Web</div>
       </div>
       <div class="p-notes__category-button-wrapper">
         <input class="p-notes__radio-button" type="radio" id="category-hobby" name="button-group">
@@ -23,7 +23,7 @@
           ontouchstart="">
           <i class="fa-solid fa-pen"></i>
         </label>
-        <div class="p-notes__category-name">デザイン</div>
+        <div class="p-notes__category-name">Hobby</div>
       </div>
       <div class="p-notes__category-button-wrapper">
         <input class="p-notes__radio-button" type="radio" id="category-other" name="button-group">
@@ -31,7 +31,7 @@
           ontouchstart="">
           <i class="fa-solid fa-user-astronaut"></i>
         </label>
-        <div class="p-notes__category-name">その他</div>
+        <div class="p-notes__category-name">Other</div>
       </div>
     </form>
     <div class="p-notes__contents" id="contents-all" data-is-show="true">
@@ -67,7 +67,7 @@
       <?php 
       $args = array(
         "posts_per_page" => 20,
-        "category_name" => "develop"
+        "category_name" => "web"
       );
       $my_posts = get_posts($args);
       foreach($my_posts as $post):
@@ -95,7 +95,7 @@
       <?php 
       $args = array(
         "posts_per_page" => 20,
-        "category_name" => "design"
+        "category_name" => "hobby"
       );
       $my_posts = get_posts($args);
       foreach($my_posts as $post):
