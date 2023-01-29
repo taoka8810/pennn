@@ -11,16 +11,15 @@
         <div class="p-notes__category-name">ALL</div>
       </div>
       <div class="p-notes__category-button-wrapper">
-        <input class="p-notes__radio-button" type="radio" id="category-develop" name="button-group">
-        <label class="p-notes__category-button" for="category-develop" data-category="dev" tabindex="-1"
-          ontouchstart="">
+        <input class="p-notes__radio-button" type="radio" id="category-web" name="button-group">
+        <label class="p-notes__category-button" for="category-web" data-category="web" tabindex="-1" ontouchstart="">
           <i class="fa-solid fa-code"></i>
         </label>
         <div class="p-notes__category-name">Web開発</div>
       </div>
       <div class="p-notes__category-button-wrapper">
-        <input class="p-notes__radio-button" type="radio" id="category-design" name="button-group">
-        <label class="p-notes__category-button" for="category-design" data-category="design" tabindex="-1"
+        <input class="p-notes__radio-button" type="radio" id="category-hobby" name="button-group">
+        <label class="p-notes__category-button" for="category-hobby" data-category="hobby" tabindex="-1"
           ontouchstart="">
           <i class="fa-solid fa-pen"></i>
         </label>
@@ -64,7 +63,7 @@
       <?php endforeach; ?>
     </div>
 
-    <div class="p-notes__contents" id="contents-dev" data-is-show="false">
+    <div class="p-notes__contents" id="contents-web" data-is-show="false">
       <?php 
       $args = array(
         "posts_per_page" => 20,
@@ -92,7 +91,7 @@
       <?php endforeach; ?>
     </div>
 
-    <div class="p-notes__contents" id="contents-design" data-is-show="false">
+    <div class="p-notes__contents" id="contents-hobby" data-is-show="false">
       <?php 
       $args = array(
         "posts_per_page" => 20,

@@ -29,11 +29,11 @@ add_action('admin_head', 'post_output_css');
 // カテゴリーによってタグの色を出し分ける
 function get_category_color($category_name) {
   switch($category_name) {
-    case "Web開発":
-      return "dev";
-    case "デザイン":
-      return "design";
-    case "その他":
+    case "Web":
+      return "web";
+    case "Hobby":
+      return "hobby";
+    case "Other":
       return "other";
     default:
       return "all";
