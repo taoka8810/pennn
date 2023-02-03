@@ -48,10 +48,10 @@
   padding: 8px 13px;
   border-radius: 16px;
   line-height: 40px;
-  &[data-category="dev"] {
+  &[data-category="web"] {
     background-color: $COLOR_RED;
   }
-  &[data-category="design"] {
+  &[data-category="hobby"] {
     background-color: $COLOR_YELLOW;
   }
   &[data-category="other"] {
