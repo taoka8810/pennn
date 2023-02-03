@@ -44,4 +44,5 @@
       <span class="p-header__bar"></span>
     </div>
   </header>
+  <div class="p-header__overlay" id="overlay" data-is-open="false"></div>
   <?php endif; ?>
