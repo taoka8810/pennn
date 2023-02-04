@@ -27,7 +27,7 @@
   <script src="https://kit.fontawesome.com/c75f779c0d.js" crossorigin="anonymous"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
   <script src="https://tarptaeya.github.io/repo-card/repo-casrd.js"></script>
-  <script>
+  <script>A
   hljs.highlightAll();
   </script>
   <title>Pennn</title>
@@ -39,10 +39,38 @@
   <?php if(!is_front_page()): ?>
   <header class="p-header">
     <div class="p-header__hamburger-icon" id="open-button" data-is-open="false">
-      <span class="p-header__bar"></span>
-      <span class="p-header__bar"></span>
-      <span class="p-header__bar"></span>
+      <span class="p-header__hamburger-bar"></span>
+      <span class="p-header__hamburger-bar"></span>
+      <span class="p-header__hamburger-bar"></span>
     </div>
   </header>
   <div class="p-header__overlay" id="overlay" data-is-open="false"></div>
+  <!-- <div class="p-header__line" id="line" data-is-open="false"></div> -->
+  <div class="p-header__triangle-area" id="triangle" data-is-open="false"></div>
+  <div class="p-header__close-button" id="close-button" data-is-open="false">
+    <span class="p-header__cross-bar"></span>
+    <span class="p-header__cross-bar"></span>
+  </div>
+  <nav class="p-header__nav--pc" id="nav-pc" data-is-open="false">
+    <a class="p-header__nav-item" href="/" data-is-open="false">
+      <span class="p-header__nav-text--en">Top</span>
+      <span class="p-header__nav-text--ja">トップページ</span>
+    </a>
+    <a class="p-header__nav-item" href="/notes" data-is-open="false">
+    <span class="p-header__nav-text--en">Notes</span>
+    <span class="p-header__nav-text--ja">投稿一覧ページ</span>
+    </a>
+    <a class="p-header__nav-item" href="/portforio" data-is-open="false">
+    <span class="p-header__nav-text--en">Portforio</span>
+    <span class="p-header__nav-text--ja">制作物一覧ページ</span>
+    </a>
+    <div class="p-header__nav-sns" data-is-open="false">
+      <a href="https://twitter.com" class="p-header__nav-twitter">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="https://github.com" class="p-header__nav-github">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+  </nav>
   <?php endif; ?>
