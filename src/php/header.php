@@ -45,4 +45,10 @@
     </div>
   </header>
   <div class="p-header__overlay" id="overlay" data-is-open="false"></div>
+  <nav class="p-header__nav">
+    <a href="/" class="p-header__nav-item">Top</a>
+    <a href="/notes" class="p-header__nav-item">Notes</a>
+    <a href="/notes" class="p-header__nav-item">Portforio</a>
+    <a href="/notes" class="p-header__nav-item">About Me</a>
+  </nav>
   <?php endif; ?>
