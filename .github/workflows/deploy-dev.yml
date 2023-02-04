@@ -1,8 +1,8 @@
 on:
   push:
     branches:
-      - main
-name: Pennn deploy
+      - develop
+name: Development Deploy
 jobs:
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
@@ -30,4 +30,4 @@ jobs:
           username: ${{ secrets.FTP_USER_NAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./pennn_theme/
-          server-dir: ./pennn.me/wp-content/themes/pennn_theme/ # access control sub directory
+          server-dir: ./dev.pennn.me/wp-content/themes/pennn_theme/ # access control sub directory
