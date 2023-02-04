@@ -146,7 +146,7 @@
   flex-direction: column;
   gap: 45px;
   width: 360px;
-  height: 400px;
+  height: 50vh;
   z-index: 1200;
   &[data-is-open="false"] {
     z-index: -1000;
