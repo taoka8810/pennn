@@ -51,7 +51,7 @@
     <span class="p-header__cross-bar"></span>
     <span class="p-header__cross-bar"></span>
   </div>
-  <nav class="p-header__nav--pc" id="nav-pc" data-is-open="false">
+  <nav class="p-header__nav" id="nav" data-is-open="false">
     <a class="p-header__nav-item" href="/" data-is-open="false">
       <span class="p-header__nav-text--en">Top</span>
       <span class="p-header__nav-text--ja">トップページ</span>

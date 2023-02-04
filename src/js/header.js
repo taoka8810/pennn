@@ -7,7 +7,7 @@ $(function () {
     // triangle
     $("#triangle").attr("data-is-open", "true");
     // nav
-    $("#nav-pc").attr("data-is-open", "true");
+    $("#nav").attr("data-is-open", "true");
     $(".p-header__nav-item").attr("data-is-open", "true");
     $(".p-header__nav-sns").attr("data-is-open", "true");
     // close button
@@ -21,7 +21,7 @@ $(function () {
     // triangle
     $("#triangle").attr("data-is-open", "false");
     // nav
-    $("#nav-pc").attr("data-is-open", "false");
+    $("#nav").attr("data-is-open", "false");
     $(".p-header__nav-item").attr("data-is-open", "false");
     $(".p-header__nav-sns").attr("data-is-open", "false");
     // close button

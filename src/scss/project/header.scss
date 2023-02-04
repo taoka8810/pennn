@@ -1,3 +1,5 @@
+@use "../foundation/forward.scss" as *;
+
 .p-header {
   display: flex;
   justify-content: end;
@@ -72,7 +74,7 @@
 .p-header__close-button {
   position: fixed;
   top: 80px;
-  right: 36px;
+  right: 20px;
   width: 30px;
   height: 30px;
   opacity: 1;
@@ -81,6 +83,14 @@
   &[data-is-open="false"] {
     opacity: 0;
     z-index: -100;
+  }
+  @include tb {
+    top: 120px;
+    right: 15px;
+  }
+  @include sp {
+    top: 110px;
+    right: 20px;
   }
 }
 
@@ -111,8 +121,8 @@
 .p-header__triangle-area {
   position: fixed;
   bottom: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 0;
+  height: 0;
   border-bottom: 100vh solid white;
   border-left: 100vw solid transparent;
   z-index: 1100;
@@ -128,19 +138,25 @@
 }
 
 // nav
-.p-header__nav--pc {
+.p-header__nav {
   position: fixed;
   right: 0;
   bottom: 0;
   display: flex;
   flex-direction: column;
   gap: 45px;
-  width: 35%;
+  width: 360px;
   height: 400px;
   z-index: 1200;
   &[data-is-open="false"] {
     z-index: -1000;
     opacity: 0;
+  }
+  @include tb {
+    width: 220px;
+  }
+  @include sp {
+    width: 170px;
   }
 }
 
@@ -158,6 +174,14 @@
   &:nth-child(3) {
     transition-delay: 1.2s;
   }
+  @include tb {
+    display: flex;
+    flex-direction: column;
+  }
+  @include sp {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .p-header__nav-item[data-is-open="false"] {
@@ -170,6 +194,9 @@
   color: #333;
   font-size: 32px;
   font-family: "Shrikhand", cursive;
+  @include sp {
+    font-size: 22px;
+  }
 }
 
 .p-header__nav-text--ja {
@@ -177,6 +204,15 @@
   color: #333;
   font-size: 16px;
   font-weight: bold;
+  @include tb {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  @include sp {
+    margin-top: 8px;
+    margin-left: 0;
+    font-size: 14px;
+  }
 }
 
 .p-header__nav-sns {
@@ -191,6 +227,12 @@
     opacity: 0;
     transition: 0;
   }
+  @include tb {
+    gap: 20px;
+  }
+  @include sp {
+    gap: 20px;
+  }
 }
 
 .p-header__nav-twitter {
@@ -200,9 +242,19 @@
   width: 70px;
   height: 70px;
   text-decoration: none;
+  @include sp {
+    width: 30px;
+    height: 30px;
+  }
   > i {
     font-size: 44px;
     color: #333;
+    @include tb {
+      font-size: 34px;
+    }
+    @include sp {
+      font-size: 28px;
+    }
   }
 }
 
@@ -213,8 +265,18 @@
   width: 70px;
   height: 70px;
   text-decoration: none;
+  @include sp {
+    width: 30px;
+    height: 30px;
+  }
   > i {
     font-size: 44px;
     color: #333;
+    @include tb {
+      font-size: 34px;
+    }
+    @include sp {
+      font-size: 28px;
+    }
   }
 }
