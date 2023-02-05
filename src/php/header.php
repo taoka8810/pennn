@@ -39,16 +39,40 @@
   <?php if(!is_front_page()): ?>
   <header class="p-header">
     <div class="p-header__hamburger-icon" id="open-button" data-is-open="false">
-      <span class="p-header__bar"></span>
-      <span class="p-header__bar"></span>
-      <span class="p-header__bar"></span>
+      <span class="p-header__hamburger-bar"></span>
+      <span class="p-header__hamburger-bar"></span>
+      <span class="p-header__hamburger-bar"></span>
     </div>
   </header>
   <div class="p-header__overlay" id="overlay" data-is-open="false"></div>
+  <button class="p-header__close-button">
+    <span class="p-header__cross-bar"></span>
+    <span class="p-header__cross-bar"></span>
+  </button>
   <nav class="p-header__nav">
-    <a href="/" class="p-header__nav-item">Top</a>
-    <a href="/notes" class="p-header__nav-item">Notes</a>
-    <a href="/notes" class="p-header__nav-item">Portforio</a>
-    <a href="/notes" class="p-header__nav-item">About Me</a>
+    <a href="/" class="p-header__nav-item">
+      <div class="p-header__nav-item-content">
+        <i class="fa-solid fa-house"></i>
+        <span>Top</span>
+      </div>
+    </a>
+    <a href="/notes" class="p-header__nav-item">
+      <div class="p-header__nav-item-content">
+        <i class="fa-solid fa-book"></i>
+        <span>Notes</span>
+      </div>
+    </a>
+    <a href="/notes" class="p-header__nav-item">
+      <div class="p-header__nav-item-content">
+        <i class="fa-solid fa-crown"></i>
+        <span>Portforio</span>
+      </div>
+    </a>
+    <a href="/notes" class="p-header__nav-item">
+      <div class="p-header__nav-item-content">
+        <i class="fa-solid fa-user-astronaut"></i>
+        <span>About Me</span>
+      </div>
+    </a>
   </nav>
   <?php endif; ?>

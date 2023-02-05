@@ -1,3 +1,5 @@
+@use "../foundation/forward.scss" as *;
+
 .p-header {
   display: flex;
   justify-content: end;
@@ -9,7 +11,7 @@
   cursor: pointer;
 }
 
-.p-header__bar {
+.p-header__hamburger-bar {
   display: block;
   width: 36px;
   height: 1px;
@@ -22,7 +24,7 @@
   }
 }
 
-.p-header__hamburger-icon[data-is-open="true"] > .p-header__bar {
+.p-header__hamburger-icon[data-is-open="true"] > .p-header__hamburger-bar {
   &:nth-child(1) {
     transform: translateX(70px);
     transition: 0.1s;
@@ -37,6 +39,20 @@
     transition: 0.1s;
     transition-delay: 0.15s;
   }
+}
+
+// close button
+.p-header__close-button {
+  position: absolute;
+  top: calc(50vh - 90px);
+  left: calc(50vw - 90px);
+  background-color: rgb(94, 94, 94);
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: none;
+  z-index: 1300;
+  cursor: pointer;
 }
 
 // overlay
@@ -60,19 +76,24 @@
 // nav
 .p-header__nav {
   position: fixed;
-  top: calc(50% - 150px);
-  left: calc(50% - 150px);
+  top: calc(50% - 200px);
+  left: calc(50% - 200px);
   display: flex;
   flex-wrap: wrap;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   transform: rotateZ(45deg);
   z-index: 1100;
 }
 .p-header__nav-item {
-  width: 150px;
-  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
   background-color: white;
+  text-decoration: none;
   outline: 1px solid black;
   &:nth-child(1) {
     border-radius: 100% 0 0 0;
@@ -85,5 +106,25 @@
   }
   &:nth-child(4) {
     border-radius: 0 0 100% 0;
+  }
+  &:hover {
+    background-color: rgb(196, 196, 196);
+  }
+}
+
+.p-header__nav-item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: rotateZ(-45deg);
+  > i {
+    font-size: 25px;
+    color: #333;
+  }
+  > span {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
   }
 }
