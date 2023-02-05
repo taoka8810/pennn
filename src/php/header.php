@@ -35,7 +35,7 @@
 </head>
 
 <body ontouchstart="">
-  <canvas id="myCanvas"></canvas>
+  <canvas id="myCanvas"></canvas> 
   <?php if(!is_front_page()): ?>
   <header class="p-header">
     <div class="p-header__hamburger-icon" id="open-button" data-is-open="false">
@@ -45,7 +45,7 @@
     </div>
   </header>
   <div class="p-header__overlay" id="overlay" data-is-open="false"></div>
-  <!-- <div class="p-header__line" id="line" data-is-open="false"></div> -->
+  <div class="p-header__line" id="line" data-is-open="false"></div>
   <div class="p-header__triangle-area" id="triangle" data-is-open="false"></div>
   <div class="p-header__close-button" id="close-button" data-is-open="false">
     <span class="p-header__cross-bar"></span>
