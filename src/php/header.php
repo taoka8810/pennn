@@ -25,11 +25,8 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/c75f779c0d.js" crossorigin="anonymous"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-  <script src="https://tarptaeya.github.io/repo-card/repo-casrd.js"></script>
-  <script>
-  hljs.highlightAll();
-  </script>
-  <title>Pennn</title>
+  <script src="https://tarptaeya.github.io/repo-card/repo-card.js"></script>
+  <script>hljs.highlightAll();</script>
   <?php wp_head(); ?>
 </head>
 
