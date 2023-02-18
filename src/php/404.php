@@ -8,8 +8,8 @@
   <title>ページが見つかりませんでした | Pennn</title>
 </head>
 <body>
-  
+  <main class="p-404">
+    <h1 class="p-404__title">404</h1>
+  </main>
 </body>
-</html><main class="p-404">
-  <h1 class="p-404__title" style="color: white; font-size: 150px; font-weight: bold;">404</h1>
-</main>
+</html>
