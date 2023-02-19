@@ -1,6 +1,6 @@
 const path = require("path");
 
-module.exports = {
+const rocket = {
   mode: "development",
   entry: "./src/rocket/model.js",
   output: {
@@ -31,7 +31,7 @@ module.exports = {
   },
 };
 
-module.exports = {
+const notFound = {
   mode: "development",
   entry: "./src/js/not-found.js",
   output: {
@@ -50,3 +50,5 @@ module.exports = {
     ],
   },
 };
+
+module.exports = [rocket, notFound];
