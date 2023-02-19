@@ -36,10 +36,15 @@ const compileScss = () => {
 
 // JSのコピー
 const bundleJS = () => {
-  return src("./src/js/**/*.js")
+  return src(["./src/js/**/*.js", "!./src/js/not-found.js"])
     .pipe(plumber(notify.onError("Error: <%= error.message %>")))
     .pipe(uglify())
     .pipe(dest("./pennn_theme/js"));
+};
+
+// JSONのコピー
+const copyJSON = () => {
+  return src("./src/json/**").pipe(dest("./pennn_theme/json"));
 };
 
 // 画像のコピー
@@ -70,6 +75,7 @@ const watchFile = () => {
   watch("./src/php/**/*.php", series(copyPHP, browserReload));
   watch("./src/style.css", series(copyFile, browserReload));
   watch("./src/js/**/*.js", series(bundleJS, browserReload));
+  watch("./src/json/*.json", series(copyJSON, browserReload));
   watch("./src/img/**", series(copyImage, browserReload));
   watch("./src/rocket/**", series(copyRocket, browserReload));
   watch("./src/lib/**", series(copyLibrary, browserReload));
@@ -81,6 +87,7 @@ exports.default = series(
   copyPHP,
   copyFile,
   bundleJS,
+  copyJSON,
   copyImage,
   copyLibrary,
   copyRocket,
@@ -93,6 +100,7 @@ exports.build = series(
   copyPHP,
   copyFile,
   bundleJS,
+  copyJSON,
   copyImage,
   copyRocket,
   copyLibrary

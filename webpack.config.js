@@ -30,3 +30,23 @@ module.exports = {
     ],
   },
 };
+
+module.exports = {
+  mode: "development",
+  entry: "./src/js/not-found.js",
+  output: {
+    filename: "not-found.js",
+    path: path.resolve(__dirname, "./pennn_theme/js"),
+  },
+  resolve: {
+    extensions: [".js"],
+  },
+  module: {
+    rules: [
+      {
+        exclude: /node_modules/,
+        loader: "babel-loader",
+      },
+    ],
+  },
+};

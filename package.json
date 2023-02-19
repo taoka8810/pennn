@@ -4,7 +4,7 @@
   "description": "いつか書く",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --mode=development & yarn gulp",
+    "start": "yarn gulp & webpack --watch",
     "build": "yarn gulp build & webpack --mode=production"
   },
   "repository": {

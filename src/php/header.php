@@ -31,7 +31,6 @@
 </head>
 
 <body ontouchstart="">
-  <canvas id="myCanvas"></canvas> 
   <?php if(!is_front_page()): ?>
   <header class="p-header">
     <div class="p-header__hamburger-icon" id="open-button" data-is-open="false">
