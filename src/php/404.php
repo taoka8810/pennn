@@ -9,7 +9,9 @@
 </head>
 <body>
   <main class="p-404">
-    <h1 class="p-404__title">404</h1>
+    <a class="p-404__link" href="/">Top</a>
+    <canvas id="myText"></canvas>
   </main>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/not-found.js"></script>
 </body>
 </html>

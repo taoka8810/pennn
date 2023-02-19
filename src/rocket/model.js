@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", init);
 function init() {
   // renderer
   const renderer = new THREE.WebGLRenderer({
-    canvas: document.querySelector(`#myCanvas`),
+    canvas: document.querySelector(`#myRocket`),
     antialias: true,
   });
 
@@ -144,7 +144,6 @@ function init() {
     distance = window.innerHeight / 2 / Math.tan(fovRad);
     camera.position.z = distance;
     camera.updateProjectionMatrix();
-    console.log("サイズ変更");
   }
   onResize();
   window.addEventListener(`resize`, onResize);

@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<canvas id="myRocket"></canvas>
 <main class="p-top">
   <button class="p-top__rocket-button" id="rocket-button" data-clicked="false">
     <i class="fa-solid fa-rocket"></i>
