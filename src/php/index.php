@@ -27,14 +27,13 @@
         <span>About</span>
         <span>Me</span>
       </a>
-      <a class="p-top__tile-twitter tile-animation" href="https://twitter.com/yasai_tarinai" ontouchstart="">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/icons/x-twitter-white.svg" alt="">
+      <a class="p-top__tile-twitter tile-animation" href="https://twitter.com/yasai_tarinai" ontouchstart="" target="_blank" rel="noopener noreferrer">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/icons/x-twitter-white.svg" alt="">
       </a>
-      <a class="p-top__tile-github tile-animation" href="" ontouchstart="">
+      <a class="p-top__tile-github tile-animation" href="" ontouchstart="" target="_blank" rel="noopener noreferrer">
         <img src="<?php echo get_template_directory_uri(); ?>/images/icons/github-gray.svg" alt="">
       </a>
     </div>
   </section>
 
 </main>
-<?php get_footer(); ?>
