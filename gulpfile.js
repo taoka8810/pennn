@@ -49,7 +49,7 @@ const copyJSON = () => {
 
 // 画像のコピー
 const copyImage = () => {
-  return src("./src/img/**").pipe(dest("./pennn_theme/img"));
+  return src("./src/images/**").pipe(dest("./pennn_theme/images"));
 };
 
 // ロケットのモデルをコピー
@@ -88,7 +88,7 @@ const watchFile = () => {
   watch("./src/style.css", series(copyFile, browserReload));
   watch("./src/js/**/*.js", series(bundleJS, browserReload));
   watch("./src/json/*.json", series(copyJSON, browserReload));
-  watch("./src/img/**", series(copyImage, browserReload));
+  watch("./src/images/**", series(copyImage, browserReload));
   watch("./src/rocket/**", series(copyRocket, browserReload));
   watch("./src/lib/**", series(copyLibrary, browserReload));
 };

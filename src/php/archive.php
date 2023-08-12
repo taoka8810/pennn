@@ -2,38 +2,50 @@
 <main class="p-notes">
   <div class="p-notes__inner">
     <h1 class="p-notes__title">Notes</h1>
-    <form class="p-notes__category-button-list" id="button-group">
+
+    <!-- カテゴリータブ -->
+    <div class="p-notes__category-button-list" id="button-group">
+
+      <!-- ALL -->
       <div class="p-notes__category-button-wrapper">
         <input class="p-notes__radio-button" type="radio" id="category-all" name="button-group" checked>
         <label class="p-notes__category-button" for="category-all" data-category="all" tabindex="-1" ontouchstart="">
-          <i class="fa-solid fa-earth-asia"></i>
+          <img src="<?php echo get_template_directory_uri(); ?>/images/icons/earth-white.svg" alt="earth">
         </label>
         <div class="p-notes__category-name">ALL</div>
       </div>
+
+      <!-- Web -->
       <div class="p-notes__category-button-wrapper">
         <input class="p-notes__radio-button" type="radio" id="category-web" name="button-group">
         <label class="p-notes__category-button" for="category-web" data-category="web" tabindex="-1" ontouchstart="">
-          <i class="fa-solid fa-code"></i>
+          <img src="<?php echo get_template_directory_uri(); ?>/images/icons/code-white.svg" alt="code">
         </label>
         <div class="p-notes__category-name">Web</div>
       </div>
+
+      <!-- Hobby -->
       <div class="p-notes__category-button-wrapper">
         <input class="p-notes__radio-button" type="radio" id="category-hobby" name="button-group">
         <label class="p-notes__category-button" for="category-hobby" data-category="hobby" tabindex="-1"
           ontouchstart="">
-          <i class="fa-solid fa-pen"></i>
+          <img src="<?php echo get_template_directory_uri(); ?>/images/icons/pen-white.svg" alt="pen">
         </label>
         <div class="p-notes__category-name">Hobby</div>
       </div>
+
+      <!-- Other -->
       <div class="p-notes__category-button-wrapper">
         <input class="p-notes__radio-button" type="radio" id="category-other" name="button-group">
         <label class="p-notes__category-button" for="category-other" data-category="other" tabindex="-1"
           ontouchstart="">
-          <i class="fa-solid fa-user-astronaut"></i>
+          <img src="<?php echo get_template_directory_uri(); ?>/images/icons/astronaut-white.svg" alt="astronaut">
         </label>
         <div class="p-notes__category-name">Other</div>
       </div>
-    </form>
+    </div>
+
+    <!-- 記事一覧（全て） -->
     <div class="p-notes__contents" id="contents-all" data-is-show="true">
       <?php 
       $args = array(
@@ -63,6 +75,7 @@
       <?php endforeach; ?>
     </div>
 
+    <!-- 記事一覧（Web） -->
     <div class="p-notes__contents" id="contents-web" data-is-show="false">
       <?php 
       $args = array(
@@ -91,6 +104,7 @@
       <?php endforeach; ?>
     </div>
 
+    <!-- 記事一覧（趣味） -->
     <div class="p-notes__contents" id="contents-hobby" data-is-show="false">
       <?php 
       $args = array(
@@ -119,6 +133,7 @@
       <?php endforeach; ?>
     </div>
 
+    <!-- 記事一覧（その他） -->
     <div class="p-notes__contents" id="contents-other" data-is-show="false">
       <?php 
       $args = array(
