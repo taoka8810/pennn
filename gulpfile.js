@@ -64,6 +64,18 @@ const copyLibrary = () => {
   return src("./src/lib/**").pipe(dest("./pennn_theme/lib"));
 };
 
+// ブラウザの初期設定
+const browserSyncFunc = (done) => {
+  browserSync.init({
+    port: 3000,
+    open: true,
+    notify: false,
+    reloadOnRestart: true,
+    proxy: "http://localhost:8810",
+  });
+  done();
+};
+
 // ブラウザ自動リロード
 const browserReload = (done) => {
   browserSync.reload();
@@ -91,7 +103,7 @@ exports.default = series(
   copyImage,
   copyLibrary,
   copyRocket,
-  watchFile
+  parallel(watchFile, browserSyncFunc)
 );
 
 exports.build = series(
