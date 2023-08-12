@@ -36,7 +36,7 @@ const compileScss = () => {
 
 // JSのコピー
 const bundleJS = () => {
-  return src(["./src/js/**/*.js", "!./src/js/not-found.js"])
+  return src(["./src/js/**/*.js", "!./src/js/notFound.js"])
     .pipe(plumber(notify.onError("Error: <%= error.message %>")))
     .pipe(uglify())
     .pipe(dest("./pennn_theme/js"));

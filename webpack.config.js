@@ -33,9 +33,9 @@ const rocket = {
 
 const notFound = {
   mode: "development",
-  entry: "./src/js/not-found.js",
+  entry: "./src/js/notFound.js",
   output: {
-    filename: "not-found.js",
+    filename: "notFound.js",
     path: path.resolve(__dirname, "./pennn_theme/js"),
   },
   resolve: {

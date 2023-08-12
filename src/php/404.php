@@ -13,6 +13,6 @@
     <a class="p-404__link" href="/">Back to Home...</a>
     <canvas id="myText"></canvas>
   </main>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/not-found.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/notFound.js"></script>
 </body>
 </html>
