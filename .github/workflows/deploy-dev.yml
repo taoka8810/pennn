@@ -2,14 +2,14 @@ on:
   push:
     branches:
       - develop
-name: Development Deploy
+name: Develop Deploy
 jobs:
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [18.x]
     steps:
       - uses: actions/checkout@master
 
