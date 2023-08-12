@@ -25,7 +25,7 @@ const copyFile = () => {
 
 // Scssのコンパイル
 const compileScss = () => {
-  return src("./src/scss/index.scss")
+  return src("./src/styles/index.scss")
     .pipe(plumber(notify.onError("Error: <%= error.message %>")))
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: "compressed" }))
@@ -83,7 +83,7 @@ const browserReload = (done) => {
 };
 
 const watchFile = () => {
-  watch("./src/scss/**/*.scss", series(compileScss, browserReload));
+  watch("./src/styles/**/*.scss", series(compileScss, browserReload));
   watch("./src/php/**/*.php", series(copyPHP, browserReload));
   watch("./src/style.css", series(copyFile, browserReload));
   watch("./src/js/**/*.js", series(bundleJS, browserReload));
