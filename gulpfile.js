@@ -8,7 +8,7 @@ const rename = require("gulp-rename");
 const browserSync = require("browser-sync");
 const uglify = require("gulp-uglify");
 
-// ファイル削除を検知
+// ファイル削除
 const deleteFile = () => {
   return del("./pennn_theme/**");
 };
