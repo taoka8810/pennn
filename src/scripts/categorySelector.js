@@ -1,3 +1,7 @@
+/**
+ * notesページでカテゴリーが変更された際の処理
+ */
+
 $(function () {
   $(".p-notes__category-button").click(function () {
     const category = $(this).attr("data-category");

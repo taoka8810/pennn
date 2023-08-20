@@ -117,7 +117,7 @@
   left: 120px;
   right: 0px;
   bottom: 0px;
-  background-image: url(../images/tile-image-note.png);
+  background-image: url(../assets/images/tile-image-note.png);
   background-size: contain;
   background-repeat: no-repeat;
   @include tb {
@@ -174,7 +174,7 @@
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background-image: url(../images/tile-image-portforio.png);
+  background-image: url(../assets/images/tile-image-portforio.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -222,7 +222,7 @@
   bottom: 0px;
   right: 50px;
   border-radius: 0 0 0 30px;
-  background-image: url(../images/tile-image-about.png);
+  background-image: url(../assets/images/tile-image-about.png);
   background-size: contain;
   background-repeat: no-repeat;
   @include tb {

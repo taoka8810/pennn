@@ -2,7 +2,7 @@
 <canvas id="myRocket"></canvas>
 <main class="p-top">
   <button class="p-top__rocket-button" id="rocket-button" data-clicked="false">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/icons/rocket-solid-white.svg" alt="rocket">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/rocket-solid-white.svg" alt="rocket">
   </button>
   <section class="p-top__heading">
     <h1 class="p-top__heading-title">Pennn</h1>
@@ -28,10 +28,10 @@
         <span>Me</span>
       </a>
       <a class="p-top__tile-twitter tile-animation" href="https://twitter.com/yasai_tarinai" ontouchstart="" target="_blank" rel="noopener noreferrer">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/icons/x-twitter-white.svg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/x-twitter-white.svg" alt="">
       </a>
       <a class="p-top__tile-github tile-animation" href="" ontouchstart="" target="_blank" rel="noopener noreferrer">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/icons/github-gray.svg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/github-gray.svg" alt="">
       </a>
     </div>
   </section>

@@ -1,11 +1,18 @@
 const path = require("path");
 
-const rocket = {
+const bundle = {
   mode: "development",
-  entry: "./src/rocket/model.js",
+  entry: {
+    notFoundModel: "./src/scripts/notFoundModel.js",
+    articleSlider: "./src/scripts/articleSlider.js",
+    categorySelector: "./src/scripts/categorySelector.js",
+    hamburgerMenu: "./src/scripts/hamburgerMenu.js",
+    rocketLaunch: "./src/scripts/rocketLaunch.js",
+    rocketModel: "./src/scripts/rocketModel.js",
+  },
   output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "./pennn_theme/rocket"),
+    filename: "[name].js",
+    path: path.resolve(__dirname, "./pennn_theme/scripts"),
   },
   resolve: {
     extensions: [".js", ".glsl", "vs", "fs"],
@@ -31,24 +38,4 @@ const rocket = {
   },
 };
 
-const notFound = {
-  mode: "development",
-  entry: "./src/js/notFound.js",
-  output: {
-    filename: "notFound.js",
-    path: path.resolve(__dirname, "./pennn_theme/js"),
-  },
-  resolve: {
-    extensions: [".js"],
-  },
-  module: {
-    rules: [
-      {
-        exclude: /node_modules/,
-        loader: "babel-loader",
-      },
-    ],
-  },
-};
-
-module.exports = [rocket, notFound];
+module.exports = [bundle];

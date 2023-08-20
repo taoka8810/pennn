@@ -41,6 +41,7 @@ function get_category_color($category_name) {
 }
 
 add_action('init', 'create_post_type');
+
 function create_post_type() {
 
   register_post_type(
@@ -56,3 +57,18 @@ function create_post_type() {
     )
   );
 }
+
+function addFiles() {
+  // CSS
+  wp_enqueue_style("stylesheet", get_template_directory_uri() . "/css/style.min.css");
+
+  // JS
+  wp_enqueue_script("404Model", get_template_directory_uri() . "/scripts/notFoundModel.js");
+  wp_enqueue_script("articleSlider", get_template_directory_uri() . "/scripts/articleSlider.js");
+  wp_enqueue_script("categorySelector", get_template_directory_uri() . "/scripts/categorySelector.js");
+  wp_enqueue_script("hamburgerMenu", get_template_directory_uri() . "/scripts/hamburgerMenu.js");
+  wp_enqueue_script("rocketLaunch", get_template_directory_uri() . "/scripts/rocketLaunch.js");
+  wp_enqueue_script("rocketModel", get_template_directory_uri() . "/scripts/rocketModel.js");
+}
+
+add_action("wp_enqueue_scripts", "addFiles");

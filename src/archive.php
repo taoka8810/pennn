@@ -10,7 +10,7 @@
       <div class="p-notes__category-button-wrapper">
         <input class="p-notes__radio-button" type="radio" id="category-all" name="button-group" checked>
         <label class="p-notes__category-button" for="category-all" data-category="all" tabindex="-1" ontouchstart="">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/icons/earth-white.svg" alt="earth">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/earth-white.svg" alt="earth">
         </label>
         <div class="p-notes__category-name">ALL</div>
       </div>
@@ -19,7 +19,7 @@
       <div class="p-notes__category-button-wrapper">
         <input class="p-notes__radio-button" type="radio" id="category-web" name="button-group">
         <label class="p-notes__category-button" for="category-web" data-category="web" tabindex="-1" ontouchstart="">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/icons/code-white.svg" alt="code">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/code-white.svg" alt="code">
         </label>
         <div class="p-notes__category-name">Web</div>
       </div>
@@ -29,7 +29,7 @@
         <input class="p-notes__radio-button" type="radio" id="category-hobby" name="button-group">
         <label class="p-notes__category-button" for="category-hobby" data-category="hobby" tabindex="-1"
           ontouchstart="">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/icons/pen-white.svg" alt="pen">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/pen-white.svg" alt="pen">
         </label>
         <div class="p-notes__category-name">Hobby</div>
       </div>
@@ -39,7 +39,7 @@
         <input class="p-notes__radio-button" type="radio" id="category-other" name="button-group">
         <label class="p-notes__category-button" for="category-other" data-category="other" tabindex="-1"
           ontouchstart="">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/icons/astronaut-white.svg" alt="astronaut">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/astronaut-white.svg" alt="astronaut">
         </label>
         <div class="p-notes__category-name">Other</div>
       </div>

@@ -3,6 +3,10 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { FontLoader } from "three/examples/jsm/loaders/FontLoader";
 import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry";
 
+/**
+ * 404ページにて回転するモデルを追加する
+ */
+
 const path = "/wp-content/themes/pennn_theme";
 window.addEventListener("DOMContentLoaded", init);
 
@@ -43,24 +47,27 @@ function init() {
 
   // font
   const fontLoader = new FontLoader();
-  fontLoader.load(`${path}/json/Roboto Black_Regular.json`, (font) => {
-    const textGeometry = new TextGeometry("404", {
-      font: font,
-      size: 1.5,
-      height: 0.4,
-      curveSegments: 10,
-      bevelEnabled: true,
-      bevelThickness: 0.03,
-      bevelSize: 0.02,
-      bevelOffset: 0,
-      bevelSegments: 4,
-    });
-    textGeometry.center();
+  fontLoader.load(
+    `${path}/assets/objects/Roboto Black_Regular.json`,
+    (font) => {
+      const textGeometry = new TextGeometry("404", {
+        font: font,
+        size: 1.5,
+        height: 0.4,
+        curveSegments: 10,
+        bevelEnabled: true,
+        bevelThickness: 0.03,
+        bevelSize: 0.02,
+        bevelOffset: 0,
+        bevelSegments: 4,
+      });
+      textGeometry.center();
 
-    const textMaterial = new THREE.MeshMatcapMaterial({ color: 0xffffff });
-    const text = new THREE.Mesh(textGeometry, textMaterial);
-    scene.add(text);
-  });
+      const textMaterial = new THREE.MeshMatcapMaterial({ color: 0xffffff });
+      const text = new THREE.Mesh(textGeometry, textMaterial);
+      scene.add(text);
+    }
+  );
 
   // Resize
   function onResize() {

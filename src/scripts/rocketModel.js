@@ -1,16 +1,20 @@
-import vertexShader from "./shader/vertexShader";
-import fragmentShader from "./shader/fragmentShader";
+import vertexShader from "../assets/rocketModel/shader/vertexShader";
+import fragmentShader from "../assets/rocketModel/shader/fragmentShader";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
 import * as THREE from "three";
 
-// パス関係はこいつを通す
-const path = "./wp-content/themes/pennn_theme/rocket";
-const rocketButtonElement = document.getElementById("rocket-button");
+/**
+ * トップページにロケットの3Dモデルを表示する
+ */
 
 window.addEventListener("DOMContentLoaded", init);
 
 function init() {
+  // パス関係はこいつを通す
+  const path = "./wp-content/themes/pennn_theme/assets/rocketModel";
+  const rocketButtonElement = document.getElementById("rocket-button");
+
   // renderer
   const renderer = new THREE.WebGLRenderer({
     canvas: document.querySelector(`#myRocket`),
