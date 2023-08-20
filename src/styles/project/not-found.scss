@@ -1,41 +1,45 @@
 @use "../foundation/forward.scss" as *;
 
 .p-404 {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.p-404__link {
-  position: absolute;
-  bottom: 30px;
-  left: 50px;
-  display: flex;
-  align-items: center;
-  padding: 0 5px 4px 45px;
-  color: #dedede;
-  text-decoration: none;
-  font-weight: 900;
-  font-size: 18px;
-  border-bottom: 1px solid #dedede;
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    width: 18px;
-    height: 1px;
-    background-color: #dedede;
-    transform-origin: left;
-    transform: rotate(-30deg);
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    width: 18px;
-    height: 1px;
-    background-color: #dedede;
-    transform-origin: left;
-    transform: rotate(30deg);
-  }
-}
+// .p-404__link {
+//   position: absolute;
+//   bottom: 30px;
+//   left: 50px;
+//   display: flex;
+//   align-items: center;
+//   padding: 0 5px 4px 45px;
+//   color: #dedede;
+//   text-decoration: none;
+//   font-weight: 900;
+//   font-size: 18px;
+//   border-bottom: 1px solid #dedede;
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     left: 0;
+//     bottom: -1px;
+//     width: 18px;
+//     height: 1px;
+//     background-color: #dedede;
+//     transform-origin: left;
+//     transform: rotate(-30deg);
+//   }
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     left: 0;
+//     bottom: -1px;
+//     width: 18px;
+//     height: 1px;
+//     background-color: #dedede;
+//     transform-origin: left;
+//     transform: rotate(30deg);
+//   }
+// }

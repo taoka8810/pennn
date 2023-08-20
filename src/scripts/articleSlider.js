@@ -1,3 +1,7 @@
+/**
+ * 関連記事を表示するスライダーの設定
+ */
+
 const swiper = new Swiper(".article-swiper", {
   loop: true,
   loopAdditionalSlides: 1,

@@ -1,3 +1,7 @@
+/**
+ * ハンバーガーメニューのアイコンがクリックされた際の処理
+ */
+
 $(function () {
   $("#open-button").click(function () {
     // icon
